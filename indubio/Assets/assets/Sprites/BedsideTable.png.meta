@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 30a085f9daa89814683f53b5493f2ce9
+guid: 0a30a9722b474624d814b78af0f25ce7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5115618752126089108
-    second: player_idle_0
-  - first:
-      213: -5050664382621690000
-    second: player_idle_1
-  - first:
-      213: -5937766766644145194
-    second: player_idle_2
-  - first:
-      213: 6213080392227812279
-    second: player_idle_3
+      213: 1584593825389672828
+    second: pixil-frame-0_17_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -110,7 +101,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_idle_0
+      name: pixil-frame-0_17_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 2
-        width: 46
-        height: 58
+        x: 0
+        y: 40
+        width: 17
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,74 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c68823149dba109b0800000000000000
-      internalID: -5115618752126089108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_idle_1
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 2
-        width: 45
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 077dd1ae08f68e9b0800000000000000
-      internalID: -5050664382621690000
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_idle_2
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 2
-        width: 42
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6d35e0bd590d89da0800000000000000
-      internalID: -5937766766644145194
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_idle_3
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 2
-        width: 45
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7b3feabc2bb493650800000000000000
-      internalID: 6213080392227812279
+      spriteID: c79f0ab40bb9df510800000000000000
+      internalID: 1584593825389672828
       vertices: []
       indices: 
       edges: []
@@ -223,10 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      player_idle_0: -5115618752126089108
-      player_idle_1: -5050664382621690000
-      player_idle_2: -5937766766644145194
-      player_idle_3: 6213080392227812279
+      pixil-frame-0_17_0: 1584593825389672828
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
