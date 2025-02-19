@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2604891869868584208}
   - component: {fileID: 9174363863514550800}
   - component: {fileID: 7150871147037276017}
+  - component: {fileID: 7010224839785143824}
   m_Layer: 0
   m_Name: pixelcam
   m_TagString: MainCamera
@@ -162,3 +163,18 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
+--- !u!114 &7010224839785143824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3811699780426163997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0be2b074506f215459295240adac11ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  offset: {x: 0, y: 0, z: -10}
+  followSpeed: 5
