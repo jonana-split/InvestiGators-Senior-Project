@@ -4,11 +4,14 @@ public class bullet : MonoBehaviour
 {
     Rigidbody2D rb;
     [SerializeField] private int speed = 5;
+    [SerializeField] private Vector2 dir = new Vector2(0,1);
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.linearVelocityY = speed;
+        dir = dir.normalized;
+        rb.linearVelocity = speed*dir;
+       
     }
 
     // Update is called once per frame
@@ -18,7 +21,7 @@ public class bullet : MonoBehaviour
     }
     private void OnBecameInvisible()
     {
-        Debug.Log("Bye");
+        //Debug.Log("Bye");
         Destroy(gameObject);
 
     }
