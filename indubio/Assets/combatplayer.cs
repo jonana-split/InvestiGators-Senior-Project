@@ -107,11 +107,14 @@ public class combatplayer : MonoBehaviour
     }
     public void hurtboxHit(Collider2D collider)
     {
-        Debug.Log(collider.gameObject.name);
         if(collider.gameObject.tag=="damages")
         {
             hp -= damage;
             slider.value = hp;
         }
+    }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        hurtboxHit(collision.collider);
     }
 }
