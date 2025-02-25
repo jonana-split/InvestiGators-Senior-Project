@@ -1,30 +1,39 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class combatplayer : MonoBehaviour
 {
+    private int hp = 100;
+    private int damage = 10;
+    private float shootCool = .25f;
+    private float shootCount = 0;
     private BoxCollider2D box;
-    private Vector2 moveDelta;
+    private Vector2 moveDelta, aimdir;
     private InputAction move;
     private InputAction slow, shoot;
     private Rigidbody2D rb;
+    private GameObject pivot;
     bool slowed = false;
     [SerializeField] private float speed = 5f;
     [SerializeField] private float speed2 = 2.5f;
     [SerializeField] private GameObject combatBox, hurtbox;
+    [SerializeField] private Slider slider;
     private Vector2 boundsMin, boundsMax, playerSize;
-
+    private Camera cam;
     public GameObject bulletPrefab;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        shootCount = shootCool;
         box = GetComponent<BoxCollider2D>();
         move = InputSystem.actions.FindAction("Move");
         slow = InputSystem.actions.FindAction("Slow");
         shoot = InputSystem.actions.FindAction("Shoot");
         rb = GetComponent<Rigidbody2D>();
-        Camera cam = Camera.main;
+        pivot = transform.Find("pivot").gameObject;
+        cam = Camera.main;
 
         Vector3 min = combatBox.GetComponent<SpriteRenderer>().bounds.min;
         Vector3 max = combatBox.GetComponent<SpriteRenderer>().bounds.max;
@@ -46,6 +55,17 @@ public class combatplayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(shootCount<shootCool)
+        {
+            shootCount += Time.deltaTime;
+        }
+        var dir = cam.ScreenToWorldPoint(Input.mousePosition)-transform.position;
+
+        dir.z = 0;
+        dir = dir.normalized;
+
+        pivot.transform.rotation = Quaternion.Euler(0, 0,Quaternion.LookRotation(Vector3.forward, dir).eulerAngles.z);
+        aimdir = dir;
         moveDelta = move.ReadValue<Vector2>();
         //Debug.Log(moveDelta);
         if (moveDelta.x > 0)
@@ -77,14 +97,21 @@ public class combatplayer : MonoBehaviour
     public void OnShoot(InputAction.CallbackContext ctx)
     {
 
-        if (ctx.performed == true)
+        if (ctx.performed == true && shootCount>=shootCool && aimdir!=Vector2.zero)
         {
-            Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+            shootCount = 0;
+            var tmpBullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+            tmpBullet.GetComponent<bullet>().dir = aimdir;
         }
 
     }
     public void hurtboxHit(Collider2D collider)
     {
         Debug.Log(collider.gameObject.name);
+        if(collider.gameObject.tag=="damages")
+        {
+            hp -= damage;
+            slider.value = hp;
+        }
     }
 }

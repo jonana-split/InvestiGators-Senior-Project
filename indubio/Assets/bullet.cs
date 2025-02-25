@@ -4,7 +4,7 @@ public class bullet : MonoBehaviour
 {
     Rigidbody2D rb;
     [SerializeField] private int speed = 5;
-    [SerializeField] private Vector2 dir = new Vector2(0,1);
+     public Vector2 dir = new Vector2(0,1);
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
