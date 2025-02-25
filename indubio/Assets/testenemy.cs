@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 public class testenemy : MonoBehaviour
 {
+    private int hp = 2;
     private BoxCollider2D box;
     private Vector2 moveDelta;
     private InputAction move;
@@ -43,6 +44,10 @@ public class testenemy : MonoBehaviour
     {
         //Debug.Log("test");
         Debug.Log(collision.gameObject.name);
+        hp--;
+        if(hp <= 0) {
+            Destroy(gameObject);
+        }
     }
 
 }
