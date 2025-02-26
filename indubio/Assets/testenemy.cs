@@ -34,9 +34,15 @@ public class testenemy : MonoBehaviour
     }
     void shoot()
     {
-
+        var dir = (player.transform.position - transform.position).normalized;
         var tmpBullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-        tmpBullet.GetComponent<bullet>().dir = (player.transform.position - transform.position).normalized;
+        tmpBullet.GetComponent<bullet>().dir = dir;
+        dir = Quaternion.AngleAxis(30, Vector3.forward) * dir;
+        tmpBullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        tmpBullet.GetComponent<bullet>().dir = dir;
+        dir = Quaternion.AngleAxis(-60, Vector3.forward) * dir;
+        tmpBullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        tmpBullet.GetComponent<bullet>().dir = dir;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

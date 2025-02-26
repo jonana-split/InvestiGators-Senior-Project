@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 79778309307564314}
   - component: {fileID: 4988867783059171861}
-  - component: {fileID: 5913061417034688141}
   - component: {fileID: 1500867444210833200}
   - component: {fileID: 4239180280774467096}
-  - component: {fileID: 6030731457558653790}
+  - component: {fileID: 5201549533778372077}
   m_Layer: 7
   m_Name: enemyColBox
   m_TagString: damages
@@ -91,18 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5913061417034688141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5004453293014031957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 861b1bdff0c01014dade960724bd8a9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1500867444210833200
 Rigidbody2D:
   serializedVersion: 5
@@ -160,7 +147,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -189,7 +176,7 @@ PolygonCollider2D:
       - {x: 0.22455178, y: -0.14802426}
       - {x: 0.08, y: 0.08}
   m_UseDelaunayMesh: 0
---- !u!114 &6030731457558653790
+--- !u!114 &5201549533778372077
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,10 +185,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5004453293014031957}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24f19f5fdaf45344db56355409c87006, type: 3}
+  m_Script: {fileID: 11500000, guid: 861b1bdff0c01014dade960724bd8a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentScript: 
 --- !u!1 &6452644963227566216
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,8 +397,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -816148033
-  m_SortingLayer: 1
+  m_SortingLayerID: -1340631149
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -5115618752126089108, guid: 30a085f9daa89814683f53b5493f2ce9, type: 3}
   m_Color: {r: 0, g: 0.13803053, b: 1, a: 1}

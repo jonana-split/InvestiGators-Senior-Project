@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-public class scaredEnemyHurtbox : MonoBehaviour
+public class angryEnemyHurtbox : MonoBehaviour
 {
     [SerializeField] string parentScript;
 
@@ -19,4 +19,5 @@ public class scaredEnemyHurtbox : MonoBehaviour
     {
         transform.parent.gameObject.SendMessage("hurtboxHit", collision);
     }
+   
 }

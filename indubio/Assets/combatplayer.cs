@@ -9,6 +9,9 @@ public class combatplayer : MonoBehaviour
     private int damage = 10;
     private float shootCool = .25f;
     private float shootCount = 0;
+    private float invinCool = 1f;
+    private float invinCount = 0;
+    bool invin = false;
     private BoxCollider2D box;
     private Vector2 moveDelta, aimdir;
     private InputAction move;
@@ -51,10 +54,25 @@ public class combatplayer : MonoBehaviour
         playerSize = screenMax2- screenMin2;
         hurtbox.GetComponent<SpriteRenderer>().enabled = false;
     }
-
+    void transparency(float a)
+    {
+        var color = GetComponent<SpriteRenderer>().material.color;
+        color.a = a;
+        GetComponent<SpriteRenderer>().material.color = color;
+    }
     // Update is called once per frame
     void Update()
     {
+        if(invin)
+        {
+            invinCount += Time.deltaTime;
+            if(invinCount > invinCool)
+            {
+                invinCount = 0;
+                invin = false;
+                transparency(1);
+            }
+        }
         if(shootCount<shootCool)
         {
             shootCount += Time.deltaTime;
@@ -107,10 +125,14 @@ public class combatplayer : MonoBehaviour
     }
     public void hurtboxHit(Collider2D collider)
     {
-        if(collider.gameObject.tag=="damages")
+        if(collider.gameObject.tag=="damages" && !invin)
         {
             hp -= damage;
             slider.value = hp;
+            transparency(.5f);
+            invin = true;
+            Debug.Log(collider.gameObject.name);
+            collider.gameObject.SendMessage("hitPlayer",SendMessageOptions.DontRequireReceiver);
         }
     }
     public void OnCollisionEnter2D(Collision2D collision)

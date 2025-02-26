@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - damages
+  - playerBullet
   layers:
   - Default
   - TransparentFX
@@ -44,6 +45,15 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3478819263
+    locked: 0
+  - name: Enemy
+    uniqueID: 2954336147
+    locked: 0
+  - name: backgroundCombat
+    uniqueID: 2452205855
+    locked: 0
+  - name: UI
+    uniqueID: 2388810531
     locked: 0
   m_RenderingLayers:
   - Default

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class playerHurtbox : MonoBehaviour
+public class hurtbox : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,6 +15,10 @@ public class playerHurtbox : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        transform.parent.GetComponent<combatplayer>().hurtboxHit(collision);
+        transform.parent.gameObject.SendMessage("hurtboxHit", collision);
+    }
+    public void hitPlayer()
+    {
+        transform.parent.gameObject.SendMessage("hitPlayer", SendMessageOptions.DontRequireReceiver);
     }
 }

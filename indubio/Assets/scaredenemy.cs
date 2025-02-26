@@ -42,7 +42,7 @@ public class scaredenemy : MonoBehaviour
         {
             moveDir = new Vector2(Random.Range(0,100), Random.Range(0,100)).normalized;
         }
-        Debug.Log(moveDir);
+        //Debug.Log(moveDir);
         rb.linearVelocity = moveDir * speed;
     }
     // Update is called once per frame
