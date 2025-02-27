@@ -8,12 +8,12 @@ public class angryenemy : MonoBehaviour
     private GameObject col;
     private Rigidbody2D rb;
     bool slowed = false;
-    [SerializeField] private float speed = 2f;
-    [SerializeField] private float lerpspeed = 1.5f;
+    [SerializeField] private float speed = 1.6f;
+    [SerializeField] private float lerpspeed = .5f;
     float moveCool = 2;
     float moveTime = 0;
     bool freeze = false;
-    float freezeCool = 2f;
+    float freezeCool = 1.25f;
     GameObject player;
     Vector2 moveDir = Vector2.one.normalized;
     public GameObject bulletPrefab;
@@ -60,6 +60,7 @@ public class angryenemy : MonoBehaviour
         {
             Destroy(collider.gameObject);
             hp--;
+            hitPlayer();
             if (hp <= 0)
             {
                 Destroy(gameObject);
