@@ -1,4 +1,5 @@
 using Unity.VisualScripting;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -21,7 +22,7 @@ public class combatplayer : MonoBehaviour
     bool slowed = false;
     [SerializeField] private float speed = 5f;
     [SerializeField] private float speed2 = 2.5f;
-    [SerializeField] private GameObject combatBox, hurtbox;
+    [SerializeField] private GameObject combatBox, hurtbox, colBox;
     [SerializeField] private Slider slider;
     private Vector2 boundsMin, boundsMax, playerSize;
     private Camera cam;
@@ -71,6 +72,8 @@ public class combatplayer : MonoBehaviour
                 invinCount = 0;
                 invin = false;
                 transparency(1);
+                colBox.GetComponent<Collider2D>().enabled = true;
+                hurtbox.GetComponent<BoxCollider2D>().enabled = true;
             }
         }
         if(shootCount<shootCool)
@@ -131,7 +134,9 @@ public class combatplayer : MonoBehaviour
             slider.value = hp;
             transparency(.5f);
             invin = true;
-            Debug.Log(collider.gameObject.name);
+            colBox.GetComponent<Collider2D>().enabled = false;
+            hurtbox.GetComponent<BoxCollider2D>().enabled = false;
+            //Debug.Log(collider.gameObject.name);
             collider.gameObject.SendMessage("hitPlayer",SendMessageOptions.DontRequireReceiver);
         }
     }

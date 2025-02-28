@@ -1,6 +1,5 @@
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class angryenemy : MonoBehaviour
 {
@@ -16,12 +15,11 @@ public class angryenemy : MonoBehaviour
     float freezeCool = 2f;
     GameObject player;
     Vector2 moveDir = Vector2.one.normalized;
-    public GameObject bulletPrefab;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        col = transform.Find("enemyColBox").gameObject;
+        //col = transform.Find("enemyColBox").gameObject;
         player = GameObject.Find("playercombat");
     }
     void transparency(float a)
@@ -36,14 +34,15 @@ public class angryenemy : MonoBehaviour
         
         if (freeze)
         {
+            //Debug.Log("Frozen " + moveTime);
             moveTime += Time.deltaTime;
 
             if (moveTime >= freezeCool)
             {
+                //Debug.Log("hi");
+             
                 freeze = false;
                 moveTime = 0;
-                col.SetActive(true);
-                transparency(1);
             }
         }
         else
@@ -55,7 +54,7 @@ public class angryenemy : MonoBehaviour
 
     public void hurtboxHit(Collider2D collider)
     {
-        //Debug.Log("test");
+        Debug.Log("test" + collider.name);
         if (collider.gameObject.tag == "playerBullet")
         {
             Destroy(collider.gameObject);
@@ -74,11 +73,11 @@ public class angryenemy : MonoBehaviour
     }
     public void hitPlayer()
     {
-        Debug.Log("here");
+        //Debug.Log("here");
         freeze = true;
         rb.linearVelocity = Vector2.zero;
-        col.SetActive(false);
-        transparency(.5f);
+        moveTime = 0;
+
     }
 
 }
