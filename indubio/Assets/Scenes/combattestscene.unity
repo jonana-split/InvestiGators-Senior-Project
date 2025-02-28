@@ -352,10 +352,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: scaredenemy
       objectReference: {fileID: 0}
-    - target: {fileID: 6452644963227566216, guid: 1940802ea3e3dd941b5683285b59c266, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -725,7 +721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6452644963227566216, guid: f49da540ea4a08a419fec3ffc83b1ccc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1333,14 +1329,6 @@ PrefabInstance:
       propertyPath: combatBox
       value: 
       objectReference: {fileID: 1886795636}
-    - target: {fileID: 3604555552573509623, guid: 04dc7db14280b9e4c93b2be9a7b0410f, type: 3}
-      propertyPath: m_SortingLayer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3604555552573509623, guid: 04dc7db14280b9e4c93b2be9a7b0410f, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1906156765
-      objectReference: {fileID: 0}
     - target: {fileID: 6452644963227566216, guid: 04dc7db14280b9e4c93b2be9a7b0410f, type: 3}
       propertyPath: m_Name
       value: playercombat

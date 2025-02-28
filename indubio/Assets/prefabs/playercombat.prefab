@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6011963081918137032}
   - component: {fileID: 2081076138578420791}
   - component: {fileID: 4134341644149165123}
-  m_Layer: 13
+  m_Layer: 11
   m_Name: playerEnemyColBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 861b1bdff0c01014dade960724bd8a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  col: {fileID: 0}
 --- !u!50 &6011963081918137032
 Rigidbody2D:
   serializedVersion: 5
@@ -201,6 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 861b1bdff0c01014dade960724bd8a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  col: {fileID: 0}
 --- !u!1 &1541952246707151018
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,7 +305,7 @@ GameObject:
   - component: {fileID: 1125215216949280250}
   - component: {fileID: 3355556954208442549}
   - component: {fileID: 7053350797022698751}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: playercombat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -578,6 +580,7 @@ MonoBehaviour:
   speed2: 1.5
   combatBox: {fileID: 0}
   hurtbox: {fileID: 7289939217210232787}
+  colBox: {fileID: 260128995310312036}
   slider: {fileID: 0}
   bulletPrefab: {fileID: 7056173824349841222, guid: 5ac19873bfa06634da47b371a4d84ea8, type: 3}
 --- !u!61 &7053350797022698751
@@ -774,6 +777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 861b1bdff0c01014dade960724bd8a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  col: {fileID: 0}
 --- !u!50 &4518948648054894078
 Rigidbody2D:
   serializedVersion: 5
