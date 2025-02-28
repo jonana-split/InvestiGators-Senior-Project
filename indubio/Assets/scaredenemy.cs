@@ -1,6 +1,5 @@
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class scaredenemy : MonoBehaviour
 {
@@ -27,7 +26,7 @@ public class scaredenemy : MonoBehaviour
     {
         moveTime = 0;
         Vector2 pos = transform.position;
-        Debug.Log(pos);
+        //Debug.Log(pos);
         if (pos.x >= 0 && pos.y >= 0) {
             moveDir = new Vector2(Random.Range(-100, 0), Random.Range(-100, 0)).normalized;
         } 

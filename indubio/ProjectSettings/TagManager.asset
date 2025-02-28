@@ -18,8 +18,8 @@ TagManager:
   - bullet
   - enemybullet
   - bounding
-  - playerBounding
-  - enemyBounding
+  - playerColBox
+  - colWithBounding
   - 
   - 
   - 
