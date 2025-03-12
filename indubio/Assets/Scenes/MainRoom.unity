@@ -552,9 +552,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -674877079
+  m_SortingLayerID: 315181191
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 9026605336201443529, guid: a0fec58173e82344eaac31c7a7cd8b31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1020,7 +1020,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000bf915acf6931c6d7
+  m_ApplyToSortingLayers: 00000000bf915acf6931c6d78748c912
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -5136,7 +5136,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -674877079
+  m_SortingLayerID: 315181191
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -1830614454967971879, guid: a0fec58173e82344eaac31c7a7cd8b31, type: 3}
@@ -5270,7 +5270,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -674877079
+  m_SortingLayerID: 315181191
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2653305963478724367, guid: a0fec58173e82344eaac31c7a7cd8b31, type: 3}
@@ -5357,7 +5357,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -674877079
+  m_SortingLayerID: 315181191
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 5690676347186198741, guid: a0fec58173e82344eaac31c7a7cd8b31, type: 3}
@@ -5634,8 +5634,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -816148033
-  m_SortingLayer: 2
+  m_SortingLayerID: 315181191
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: -6699842053977449082, guid: a0fec58173e82344eaac31c7a7cd8b31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6170,7 +6170,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -674877079
+  m_SortingLayerID: 315181191
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 9026605336201443529, guid: a0fec58173e82344eaac31c7a7cd8b31, type: 3}
@@ -6438,7 +6438,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -674877079
+  m_SortingLayerID: 315181191
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -1771746556323536648, guid: a0fec58173e82344eaac31c7a7cd8b31, type: 3}
@@ -6572,7 +6572,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -674877079
+  m_SortingLayerID: 315181191
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 1618335695185966006, guid: a0fec58173e82344eaac31c7a7cd8b31, type: 3}
@@ -7164,8 +7164,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -816148033
-  m_SortingLayer: 2
+  m_SortingLayerID: 315181191
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: -6699842053977449082, guid: a0fec58173e82344eaac31c7a7cd8b31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -7432,7 +7432,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -674877079
+  m_SortingLayerID: 315181191
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -4887612469839288987, guid: a0fec58173e82344eaac31c7a7cd8b31, type: 3}
@@ -7662,7 +7662,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1629047608581722986, guid: a616d6619dc3c0040a38b6e139b5a3e4, type: 3}
       propertyPath: orthographic size
-      value: 1.85
+      value: 2.435
       objectReference: {fileID: 0}
     - target: {fileID: 3811699780426163997, guid: a616d6619dc3c0040a38b6e139b5a3e4, type: 3}
       propertyPath: m_Name
