@@ -43,7 +43,7 @@ public class player : MonoBehaviour
         {
             isWalking = false;
         }
-        
+
         moveDelta *= speed;
         Debug.Log(moveDelta);
         rb.linearVelocity = moveDelta;
@@ -52,7 +52,7 @@ public class player : MonoBehaviour
         if (isWalking)
         {
             animator.SetFloat("x", horizontal);
-            animator.SetFloat("y", vertical);  
+            animator.SetFloat("y", vertical);
 
         }
 
