@@ -6,6 +6,7 @@ TagManager:
   tags:
   - damages
   - playerBullet
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -42,6 +43,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Furniture
+    uniqueID: 315181191
     locked: 0
   - name: Player
     uniqueID: 3478819263
