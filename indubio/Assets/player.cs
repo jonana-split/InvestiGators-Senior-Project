@@ -20,7 +20,7 @@ public class player : MonoBehaviour
     void Update()
     {
         moveDelta = move.ReadValue<Vector2>();
-        Debug.Log(moveDelta);
+        //Debug.Log(moveDelta);
         if (moveDelta.x > 0)
         {
             transform.localScale = Vector3.one;
@@ -29,8 +29,8 @@ public class player : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
         }
         moveDelta *= speed;
-        Debug.Log(moveDelta);
+        //Debug.Log(moveDelta);
         rb.linearVelocity = moveDelta;
-        Debug.Log(rb.linearVelocity);
+        //Debug.Log(rb.linearVelocity);
     }
 }
