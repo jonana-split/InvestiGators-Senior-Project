@@ -3,9 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
+<<<<<<< HEAD
+  tags:
+  - Door
+||||||| 454422a
+  tags: []
+=======
   tags:
   - damages
   - playerBullet
+>>>>>>> main-temp
   layers:
   - Default
   - TransparentFX
@@ -42,6 +49,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Furniture
+    uniqueID: 3620090217
     locked: 0
   - name: Player
     uniqueID: 3478819263

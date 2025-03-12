@@ -30,12 +30,20 @@ public class player : MonoBehaviour
     void Update()
     {
         moveDelta = move.ReadValue<Vector2>();
+<<<<<<< HEAD
+        //Debug.Log(moveDelta);
+        if (moveDelta.x > 0)
+||||||| 454422a
+        Debug.Log(moveDelta);
+        if (moveDelta.x > 0)
+=======
         Debug.Log(moveDelta);
 
         horizontal = moveDelta.x;
         vertical = moveDelta.y;
 
         if (horizontal != 0 || vertical != 0)
+>>>>>>> main-temp
         {
             isWalking = true;
         }
@@ -45,8 +53,13 @@ public class player : MonoBehaviour
         }
         
         moveDelta *= speed;
-        Debug.Log(moveDelta);
+        //Debug.Log(moveDelta);
         rb.linearVelocity = moveDelta;
+<<<<<<< HEAD
+        //Debug.Log(rb.linearVelocity);
+||||||| 454422a
+        Debug.Log(rb.linearVelocity);
+=======
         Debug.Log(rb.linearVelocity);
 
         if (isWalking)
@@ -58,6 +71,7 @@ public class player : MonoBehaviour
 
         animator.SetBool("walking", isWalking);
 
+>>>>>>> main-temp
     }
 
 }
