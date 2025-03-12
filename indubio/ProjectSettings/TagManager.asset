@@ -3,8 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
+<<<<<<< HEAD
   tags:
   - Door
+||||||| 454422a
+  tags: []
+=======
+  tags:
+  - damages
+  - playerBullet
+>>>>>>> main-temp
   layers:
   - Default
   - TransparentFX
@@ -12,13 +20,13 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - player
+  - enemy
+  - bullet
+  - enemybullet
+  - bounding
+  - playerColBox
+  - colWithBounding
   - 
   - 
   - 
@@ -47,6 +55,15 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3478819263
+    locked: 0
+  - name: Enemy
+    uniqueID: 2954336147
+    locked: 0
+  - name: backgroundCombat
+    uniqueID: 2452205855
+    locked: 0
+  - name: UI
+    uniqueID: 2388810531
     locked: 0
   m_RenderingLayers:
   - Default
