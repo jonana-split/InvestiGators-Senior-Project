@@ -222,8 +222,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -674877079
-  m_SortingLayer: 1
+  m_SortingLayerID: -816148033
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 1584593825389672828, guid: 0a30a9722b474624d814b78af0f25ce7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2108,7 +2108,7 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
@@ -2129,8 +2129,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -674877079
-  m_SortingLayer: 1
+  m_SortingLayerID: -816148033
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 3706944206395557854, guid: b53b9caba96223b4a810f50cf6eceea3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2242,7 +2242,7 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
@@ -2263,8 +2263,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -674877079
-  m_SortingLayer: 1
+  m_SortingLayerID: -816148033
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -3218939311435276648, guid: c691ec9dc2c0bc84091fee27f22fa8f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2798,8 +2798,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -674877079
-  m_SortingLayer: 1
+  m_SortingLayerID: -816148033
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -6699842053977449082, guid: a0fec58173e82344eaac31c7a7cd8b31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3226,7 +3226,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1629047608581722986, guid: a616d6619dc3c0040a38b6e139b5a3e4, type: 3}
       propertyPath: orthographic size
-      value: 1.85
+      value: 2.435
       objectReference: {fileID: 0}
     - target: {fileID: 3811699780426163997, guid: a616d6619dc3c0040a38b6e139b5a3e4, type: 3}
       propertyPath: m_Name
