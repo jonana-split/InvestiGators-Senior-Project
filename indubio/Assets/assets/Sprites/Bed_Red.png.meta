@@ -147,15 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< HEAD:indubio/Assets/assets/Sprites/Bed_Red.png.meta
     nameFileIdTable:
       Bed_Red_0: -3218939311435276648
-||||||| 454422a:indubio/Assets/assets/Tiles/HouseTileSet.png.meta
-    nameFileIdTable: {}
-=======
-    nameFileIdTable:
-      HouseTileSet_0: 3288139993520218926
->>>>>>> main-temp:indubio/Assets/assets/Tiles/HouseTileSet.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
