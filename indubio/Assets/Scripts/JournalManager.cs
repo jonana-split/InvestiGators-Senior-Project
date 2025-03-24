@@ -18,12 +18,14 @@ public class JournalManager : MonoBehaviour
     {
         journalPanel.SetActive(true);
         journalButton.SetActive(false);
+        Time.timeScale = 0;
     }
 
     public void CloseJournal()
     {
         journalPanel.SetActive(false);
         journalButton.SetActive(true);
+        Time.timeScale = 1;
     }
 
     public void ReadTextFromFile()
