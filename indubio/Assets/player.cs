@@ -2,6 +2,8 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
+using TMPro;
+using static UnityEditor.Progress;
 
 public class player : MonoBehaviour
 {
@@ -18,6 +20,11 @@ public class player : MonoBehaviour
     private float vertical;
     private Vector2 direction;
 
+    public Inventory inventory;
+    public TextMeshProUGUI pressE;
+    private InvItem currentItem;
+    private bool collectItem = false;
+
     void Start()
     {
         box = GetComponent<BoxCollider2D>();
@@ -30,7 +37,7 @@ public class player : MonoBehaviour
     void Update()
     {
         moveDelta = move.ReadValue<Vector2>();
-        Debug.Log(moveDelta);
+        //Debug.Log(moveDelta);
 
         horizontal = moveDelta.x;
         vertical = moveDelta.y;
@@ -45,9 +52,9 @@ public class player : MonoBehaviour
         }
 
         moveDelta *= speed;
-        Debug.Log(moveDelta);
+        //Debug.Log(moveDelta);
         rb.linearVelocity = moveDelta;
-        Debug.Log(rb.linearVelocity);
+        //Debug.Log(rb.linearVelocity);
 
         if (isWalking)
         {
@@ -58,6 +65,34 @@ public class player : MonoBehaviour
 
         animator.SetBool("walking", isWalking);
 
+        if (Input.GetKeyDown(KeyCode.E) && collectItem == true)
+        {
+            inventory.AddItem(currentItem);
+        }
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Item collided");
+        InvItem item = collision.GetComponent<InvItem>();
+        if (item != null)
+        {
+            Debug.Log("Adding knife");
+            currentItem = item;
+            collectItem = true;
+            pressE.gameObject.SetActive(true);
+            
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.GetComponent<InvItem>() != null)
+        {
+            collectItem = false;
+            pressE.gameObject.SetActive(false);
+        }
     }
 
 }
