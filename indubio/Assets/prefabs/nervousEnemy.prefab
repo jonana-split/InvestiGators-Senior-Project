@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 7765679477921616231}
   - component: {fileID: 1807534028597246763}
   - component: {fileID: 1125215216949280250}
-  - component: {fileID: 7678241980731106871}
   - component: {fileID: 4724829114476857345}
+  - component: {fileID: 8838056283527407311}
   m_Layer: 7
-  m_Name: enemytest
+  m_Name: nervousEnemy
   m_TagString: damages
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1663183816, guid: c63f3852824ed944aadeda0e73764124, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.79045916, a: 1}
+  m_Color: {r: 0.63421154, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -140,22 +140,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7678241980731106871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6452644963227566216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efb145162308a3147b069ae147e4d029, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  speed2: 2.5
-  shootWhen: 3
-  bulletPrefab: {fileID: 7056173824349841222, guid: b6c757b16f868e743b7c6fbedd8b67b6, type: 3}
 --- !u!60 &4724829114476857345
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -215,3 +199,19 @@ PolygonCollider2D:
       - {x: 0.22455178, y: -0.14802426}
       - {x: 0.08, y: 0.08}
   m_UseDelaunayMesh: 0
+--- !u!114 &8838056283527407311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6452644963227566216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 134abe20fd6614b40a9640b70e22c61d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  speed2: 2.5
+  shootWhen: 0.5
+  bulletPrefab: {fileID: 7056173824349841222, guid: 5dbccf813b771e343bf525f7f2505570, type: 3}

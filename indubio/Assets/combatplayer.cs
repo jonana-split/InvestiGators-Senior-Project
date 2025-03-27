@@ -22,7 +22,7 @@ public class combatplayer : MonoBehaviour
     bool slowed = false;
     [SerializeField] private float speed = 5f;
     [SerializeField] private float speed2 = 2.5f;
-    [SerializeField] private GameObject combatBox, hurtbox, colBox;
+    [SerializeField] private GameObject combatBox, colBox;
     [SerializeField] private Slider slider;
     private Vector2 boundsMin, boundsMax, playerSize;
     private Camera cam;
@@ -33,7 +33,6 @@ public class combatplayer : MonoBehaviour
         shootCount = shootCool;
         box = GetComponent<BoxCollider2D>();
         move = InputSystem.actions.FindAction("Move");
-        slow = InputSystem.actions.FindAction("Slow");
         shoot = InputSystem.actions.FindAction("Shoot");
         rb = GetComponent<Rigidbody2D>();
         pivot = transform.Find("pivot").gameObject;
@@ -53,7 +52,6 @@ public class combatplayer : MonoBehaviour
         Vector3 screenMin2 = cam.WorldToScreenPoint(min);
         Vector3 screenMax2 = cam.WorldToScreenPoint(max);
         playerSize = screenMax2- screenMin2;
-        hurtbox.GetComponent<SpriteRenderer>().enabled = false;
     }
     void transparency(float a)
     {
@@ -73,7 +71,6 @@ public class combatplayer : MonoBehaviour
                 invin = false;
                 transparency(1);
                 colBox.GetComponent<Collider2D>().enabled = true;
-                hurtbox.GetComponent<BoxCollider2D>().enabled = true;
             }
         }
         if(shootCount<shootCool)
@@ -96,17 +93,6 @@ public class combatplayer : MonoBehaviour
         else if (moveDelta.x < 0)
         {
             transform.localScale = new Vector3(-1, 1, 1);
-        }
-        if (slow.inProgress)
-        {
-            slowed = true;
-
-            hurtbox.GetComponent<SpriteRenderer>().enabled = true;
-        }
-        else
-        {
-            slowed = false;
-            hurtbox.GetComponent<SpriteRenderer>().enabled = false;
         }
         Vector2 targ = new Vector2(transform.position.x, transform.position.y) + moveDelta;
 
@@ -135,7 +121,6 @@ public class combatplayer : MonoBehaviour
             transparency(.5f);
             invin = true;
             colBox.GetComponent<Collider2D>().enabled = false;
-            hurtbox.GetComponent<BoxCollider2D>().enabled = false;
             //Debug.Log(collider.gameObject.name);
             collider.gameObject.SendMessage("hitPlayer",SendMessageOptions.DontRequireReceiver);
         }

@@ -11,18 +11,14 @@ public class bullet : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         dir = dir.normalized;
         rb.linearVelocity = speed*dir;
-       
+        Destroy(gameObject, 3);
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-    private void OnBecameInvisible()
-    {
-        //Debug.Log("Bye");
-        Destroy(gameObject);
-
     }
 }
