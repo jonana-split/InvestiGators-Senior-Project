@@ -3872,10 +3872,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1629047608581722986, guid: a616d6619dc3c0040a38b6e139b5a3e4, type: 3}
-      propertyPath: orthographic size
-      value: 5.09375
-      objectReference: {fileID: 0}
     - target: {fileID: 3811699780426163997, guid: a616d6619dc3c0040a38b6e139b5a3e4, type: 3}
       propertyPath: m_Name
       value: pixelcam
@@ -3918,10 +3914,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5263089715441270974, guid: a616d6619dc3c0040a38b6e139b5a3e4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7010224839785143824, guid: a616d6619dc3c0040a38b6e139b5a3e4, type: 3}
-      propertyPath: offset.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
