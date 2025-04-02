@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 7765679477921616231}
   - component: {fileID: 1807534028597246763}
   - component: {fileID: 1125215216949280250}
-  - component: {fileID: 4724829114476857345}
   - component: {fileID: 8838056283527407311}
+  - component: {fileID: 5411446302341364589}
   m_Layer: 7
   m_Name: nervousEnemy
   m_TagString: damages
@@ -140,8 +140,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &4724829114476857345
-PolygonCollider2D:
+--- !u!114 &8838056283527407311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6452644963227566216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 134abe20fd6614b40a9640b70e22c61d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  speed2: 2.5
+  shootWhen: 2
+  bulletPrefab: {fileID: 7056173824349841222, guid: 5dbccf813b771e343bf525f7f2505570, type: 3}
+--- !u!70 &5411446302341364589
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -174,44 +190,6 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.04}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.44, y: 0.56}
-    newSize: {x: 0.46, y: 0.58}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.1044586, y: 0.16596872}
-      - {x: 0.0526061, y: 0.3143183}
-      - {x: -0.11562416, y: 0.2690924}
-      - {x: -0.13074395, y: 0.15227589}
-      - {x: -0.08, y: 0.08}
-      - {x: -0.21859951, y: -0.15227583}
-      - {x: -0.0593808, y: -0.17453492}
-      - {x: -0.09923276, y: -0.24078968}
-      - {x: 0.09672451, y: -0.23733309}
-      - {x: 0.06162834, y: -0.17799509}
-      - {x: 0.22455178, y: -0.14802426}
-      - {x: 0.08, y: 0.08}
-  m_UseDelaunayMesh: 0
---- !u!114 &8838056283527407311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6452644963227566216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 134abe20fd6614b40a9640b70e22c61d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  speed2: 2.5
-  shootWhen: 0.5
-  bulletPrefab: {fileID: 7056173824349841222, guid: 5dbccf813b771e343bf525f7f2505570, type: 3}
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.92, y: 1.75}
+  m_Direction: 0

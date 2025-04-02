@@ -86,6 +86,7 @@ public class scaredenemy : MonoBehaviour
             if (hp <= 0)
             {
                 Destroy(gameObject);
+                combatmanager.enemyCount--;
             }
         }
     }

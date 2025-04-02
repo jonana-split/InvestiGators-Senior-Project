@@ -56,6 +56,7 @@ public class testenemy : MonoBehaviour
             if (hp <= 0)
             {
                 Destroy(gameObject);
+                combatmanager.enemyCount--;
             }
         }
     }

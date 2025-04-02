@@ -51,6 +51,7 @@ public class nervousenemy : MonoBehaviour
             if (hp <= 0)
             {
                 Destroy(gameObject);
+                combatmanager.enemyCount--;
             }
         }
     }

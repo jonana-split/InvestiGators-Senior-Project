@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class hurtbox : MonoBehaviour
 {
-    public Collider2D col;
+    Collider2D col;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,6 +16,7 @@ public class hurtbox : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("TEST2");
         transform.parent.gameObject.SendMessage("hurtboxHit", collision);
     }
     private void OnCollisionEnter2D(Collision2D collision)
