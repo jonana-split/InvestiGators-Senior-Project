@@ -3,9 +3,11 @@ using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class combatplayer : MonoBehaviour
 {
+    public bool freeze=false;
     private int hp = 100;
     private int damage = 10;
     private float shootCool = .25f;
@@ -23,7 +25,9 @@ public class combatplayer : MonoBehaviour
     [SerializeField] private float speed = 5f;
     [SerializeField] private float speed2 = 2.5f;
     [SerializeField] private GameObject combatBox, colBox;
-    [SerializeField] private Slider slider;
+    [SerializeField] private UnityEngine.UI.Slider slider;
+    public combatmanager manager;
+
     private Vector2 boundsMin, boundsMax, playerSize;
     private Camera cam;
     public GameObject bulletPrefab;
@@ -60,8 +64,18 @@ public class combatplayer : MonoBehaviour
         GetComponent<SpriteRenderer>().material.color = color;
     }
     // Update is called once per frame
+    public void resetForWave()
+    {
+        freeze = true;
+        transform.position = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
+    }
     void Update()
     {
+        if(freeze)
+        {
+            return;
+        }
         if(invin)
         {
             invinCount += Time.deltaTime;
@@ -103,7 +117,12 @@ public class combatplayer : MonoBehaviour
     }
     public void OnShoot(InputAction.CallbackContext ctx)
     {
-
+        if (freeze && ctx.performed == true)
+        {
+            freeze = false;
+            manager.spawnWave();
+            return;
+        }
         if (ctx.performed == true && shootCount>=shootCool && aimdir!=Vector2.zero)
         {
             shootCount = 0;
