@@ -16,9 +16,11 @@ public class combatmanager : MonoBehaviour
     int wave = 0;
     public combatplayer player;
     bool WaveSpawned = true;
+    public GameObject clickPrompt;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        clickPrompt.SetActive(true);
         //textbox = textboxObj.GetComponent<TextMeshPro>();
         textbox.text = waveDialog[wave];
         player.resetForWave();
@@ -38,6 +40,7 @@ public class combatmanager : MonoBehaviour
     }
     public void spawnWave()
     {
+        clickPrompt.SetActive(false);
         if (wave < numbersInWaves.Length)
         {
             spawn();
@@ -59,6 +62,7 @@ public class combatmanager : MonoBehaviour
             {
                 Destroy(b);
             }
+            clickPrompt.SetActive(true);
             player.resetForWave();
             WaveSpawned = true;
 

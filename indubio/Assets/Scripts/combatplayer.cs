@@ -68,7 +68,10 @@ public class combatplayer : MonoBehaviour
     {
         freeze = true;
         transform.position = Vector2.zero;
-        rb.linearVelocity = Vector2.zero;
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
     }
     void Update()
     {
