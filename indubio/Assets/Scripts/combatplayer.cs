@@ -37,6 +37,7 @@ public class combatplayer : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        animator.SetBool("walking", false);
         shootCount = shootCool;
         box = GetComponent<BoxCollider2D>();
         move = InputSystem.actions.FindAction("Move");
@@ -69,6 +70,12 @@ public class combatplayer : MonoBehaviour
     // Update is called once per frame
     public void resetForWave()
     {
+        if (animator != null)
+        {
+            animator.SetFloat("x", 0);
+            animator.SetFloat("y", 0);
+            animator.SetBool("walking", false);
+        }
         freeze = true;
         transform.position = Vector2.zero;
         if (rb != null)
@@ -159,6 +166,9 @@ public class combatplayer : MonoBehaviour
             hp -= damage;
             if (hp <= 0)
             {
+                animator.SetFloat("x", 0);
+                animator.SetFloat("y", 0);
+                animator.SetBool("walking", false);
                 manager.gameOver();
             }
             else

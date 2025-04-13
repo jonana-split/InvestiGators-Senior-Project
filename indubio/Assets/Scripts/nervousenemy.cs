@@ -18,6 +18,7 @@ public class nervousenemy : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        shootCount = .4f;
         player = GameObject.Find("playercombat");
     }
 

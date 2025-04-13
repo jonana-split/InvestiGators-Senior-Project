@@ -131,7 +131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   speed2: 2.5
-  shootWhen: 3
+  shootWhen: 1
   bulletPrefab: {fileID: 7056173824349841222, guid: b6c757b16f868e743b7c6fbedd8b67b6, type: 3}
 --- !u!60 &6860938250116990348
 PolygonCollider2D:

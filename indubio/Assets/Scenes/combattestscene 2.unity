@@ -466,6 +466,7 @@ MonoBehaviour:
   - '"Screw Off!"'
   - '"Heck You!"'
   - '"Explode!"'
+  - Damn, you win IG
   player: {fileID: 1698894104}
   clickPrompt: {fileID: 1309056257}
   hideOnGameOver:
@@ -476,6 +477,7 @@ MonoBehaviour:
   - {fileID: 752458103}
   - {fileID: 938998339}
   - {fileID: 915968977}
+  nextScene: Assets/Scenes/combattestscene.unity
 --- !u!212 &771961923
 SpriteRenderer:
   m_ObjectHideFlags: 0

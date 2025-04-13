@@ -131,7 +131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   speed2: 2.5
-  shootWhen: 2
+  shootWhen: 1
   bulletPrefab: {fileID: 7056173824349841222, guid: 5dbccf813b771e343bf525f7f2505570, type: 3}
 --- !u!58 &5553082389899671689
 CircleCollider2D:

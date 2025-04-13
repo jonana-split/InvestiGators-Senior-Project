@@ -20,6 +20,7 @@ public class combatmanager : MonoBehaviour
     public GameObject clickPrompt;
     public GameObject[] hideOnGameOver;
     public GameObject[] showOnGameOver;
+    public string nextScene;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void gameOver()
     {
@@ -48,6 +49,7 @@ public class combatmanager : MonoBehaviour
     
     void spawn()
     {
+        
         for(int i = 0; i < numbersInWaves[wave]; i++)
         {
             enemyCount++;
@@ -63,6 +65,11 @@ public class combatmanager : MonoBehaviour
         if (wave < numbersInWaves.Length)
         {
             spawn();
+        }else if (wave == numbersInWaves.Length)
+        {
+
+            SceneManager.LoadScene(nextScene);
+
         }
     }
     // Update is called once per frame
@@ -72,7 +79,7 @@ public class combatmanager : MonoBehaviour
         {
           
             wave++;
-            if (wave < numbersInWaves.Length)
+            if (wave < waveDialog.Length) //needs to be 1 more than the rest of the arrays bcs of closing dialog
             {
                 textbox.text = waveDialog[wave];
             }
