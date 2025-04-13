@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7765679477921616231}
   - component: {fileID: 1125215216949280250}
   - component: {fileID: 8838056283527407311}
-  - component: {fileID: 5411446302341364589}
+  - component: {fileID: 5553082389899671689}
   m_Layer: 7
   m_Name: nervousEnemy
   m_TagString: damages
@@ -79,8 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: -1340631149
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1663183816, guid: c63f3852824ed944aadeda0e73764124, type: 3}
-  m_Color: {r: 0.63421154, g: 0, b: 1, a: 1}
+  m_Sprite: {fileID: 7158942930760888583, guid: 8a72d02101e430a40b3fd9fbe1a3c0cc, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -133,8 +133,8 @@ MonoBehaviour:
   speed2: 2.5
   shootWhen: 2
   bulletPrefab: {fileID: 7056173824349841222, guid: 5dbccf813b771e343bf525f7f2505570, type: 3}
---- !u!70 &5411446302341364589
-CapsuleCollider2D:
+--- !u!58 &5553082389899671689
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -163,10 +163,9 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.92, y: 1.75}
-  m_Direction: 0
+  m_Offset: {x: -0.04, y: 0}
+  m_Radius: 0.7301049

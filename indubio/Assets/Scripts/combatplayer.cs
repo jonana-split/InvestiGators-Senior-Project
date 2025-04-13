@@ -9,12 +9,13 @@ public class combatplayer : MonoBehaviour
 {
     public bool freeze=false;
     private int hp = 100;
-    private int damage = 10;
+    private int damage = 25;
     private float shootCool = .25f;
     private float shootCount = 0;
     private float invinCool = 1f;
     private float invinCount = 0;
     bool invin = false;
+    public Animator animator;
     private BoxCollider2D box;
     private Vector2 moveDelta, aimdir;
     private InputAction move;
@@ -31,9 +32,11 @@ public class combatplayer : MonoBehaviour
     private Vector2 boundsMin, boundsMax, playerSize;
     private Camera cam;
     public GameObject bulletPrefab;
+    bool isWalking = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        animator = GetComponent<Animator>();
         shootCount = shootCool;
         box = GetComponent<BoxCollider2D>();
         move = InputSystem.actions.FindAction("Move");
@@ -103,18 +106,33 @@ public class combatplayer : MonoBehaviour
         aimdir = dir;
         moveDelta = move.ReadValue<Vector2>();
         //Debug.Log(moveDelta);
-        if (moveDelta.x > 0)
-        {
-            transform.localScale = Vector3.one;
-        }
-        else if (moveDelta.x < 0)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
+        
         Vector2 targ = new Vector2(transform.position.x, transform.position.y) + moveDelta;
 
         moveDelta *= (slowed) ? speed2 : speed;
         //Debug.Log(moveDelta);
+        if(moveDelta.magnitude > 0)
+        {
+            isWalking = true;
+        }
+        else
+        {
+            isWalking = false;
+        }
+
+        //moveDelta *= speed;
+        //Debug.Log(moveDelta);
+        rb.linearVelocity = moveDelta;
+        //Debug.Log(rb.linearVelocity);
+
+        if (isWalking)
+        {
+            animator.SetFloat("x", moveDelta.x);
+            animator.SetFloat("y", moveDelta.y);
+
+        }
+        animator.SetBool("walking", isWalking);
+
         rb.linearVelocity = moveDelta;
         //Debug.Log(rb.linearVelocity);
     }
@@ -139,12 +157,19 @@ public class combatplayer : MonoBehaviour
         if(collider.gameObject.tag=="damages" && !invin)
         {
             hp -= damage;
-            slider.value = hp;
-            transparency(.5f);
-            invin = true;
-            colBox.GetComponent<Collider2D>().enabled = false;
-            //Debug.Log(collider.gameObject.name);
-            collider.gameObject.SendMessage("hitPlayer",SendMessageOptions.DontRequireReceiver);
+            if (hp <= 0)
+            {
+                manager.gameOver();
+            }
+            else
+            {
+                slider.value = hp;
+                transparency(.5f);
+                invin = true;
+                colBox.GetComponent<Collider2D>().enabled = false;
+                //Debug.Log(collider.gameObject.name);
+                collider.gameObject.SendMessage("hitPlayer", SendMessageOptions.DontRequireReceiver);
+            }
         }
     }
     public void OnCollisionEnter2D(Collision2D collision)

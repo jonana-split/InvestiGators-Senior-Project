@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
 using TMPro;
-using static UnityEditor.Progress;
 
 public class player : MonoBehaviour
 {

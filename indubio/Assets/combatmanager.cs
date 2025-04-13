@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class combatmanager : MonoBehaviour
 {
@@ -17,7 +18,25 @@ public class combatmanager : MonoBehaviour
     public combatplayer player;
     bool WaveSpawned = true;
     public GameObject clickPrompt;
+    public GameObject[] hideOnGameOver;
+    public GameObject[] showOnGameOver;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public void gameOver()
+    {
+        Time.timeScale = 0;
+        foreach (GameObject go in hideOnGameOver) { 
+            go.SetActive(false);
+        }
+        foreach (GameObject go in showOnGameOver)
+        {
+            go.SetActive(true);
+        }
+    }
+    public void Reset()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
     void Start()
     {
         clickPrompt.SetActive(true);
