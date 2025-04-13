@@ -21,7 +21,15 @@ public class combatmanager : MonoBehaviour
     public GameObject[] hideOnGameOver;
     public GameObject[] showOnGameOver;
     public string nextScene;
+    public TextMeshProUGUI waveCounter;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void updateWaveCounter()
+    {
+        if (waveCounter != null)
+        {
+            waveCounter.text = "Wave: " + (wave+1) + "/" + numbersInWaves.Length;
+        }
+    }
     public void gameOver()
     {
         Time.timeScale = 0;
@@ -40,11 +48,13 @@ public class combatmanager : MonoBehaviour
     }
     void Start()
     {
+        updateWaveCounter();
         clickPrompt.SetActive(true);
         //textbox = textboxObj.GetComponent<TextMeshPro>();
         textbox.text = waveDialog[wave];
         player.resetForWave();
         player.manager = this;
+        
     }
     
     void spawn()
@@ -79,9 +89,14 @@ public class combatmanager : MonoBehaviour
         {
           
             wave++;
-            if (wave < waveDialog.Length) //needs to be 1 more than the rest of the arrays bcs of closing dialog
+            updateWaveCounter();
+            if (wave < numbersInWaves.Length) //needs to be 1 more than the rest of the arrays bcs of closing dialog
             {
                 textbox.text = waveDialog[wave];
+            }else if (wave == numbersInWaves.Length)
+            {
+                textbox.text = waveDialog[wave];
+                waveCounter.text = "Combat Complete";
             }
             var bullets = GameObject.FindGameObjectsWithTag("damages");
             foreach (GameObject b in bullets)
