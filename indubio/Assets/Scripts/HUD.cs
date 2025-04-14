@@ -24,6 +24,13 @@ public class HUD: MonoBehaviour
             {
                 image.enabled = true;
                 image.sprite = i.Item.Image;
+
+                slotImg setItem = slot.GetComponent<slotImg>();
+                if (setItem != null)
+                {
+                    setItem.currItem(i.Item);
+                }
+
                 break;
             }
         }
