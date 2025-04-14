@@ -11,13 +11,14 @@ public class testenemy : MonoBehaviour
     GameObject player;
     [SerializeField] private float speed = 5f;
     [SerializeField] private float speed2 = 2.5f;
-    [SerializeField] private float shootWhen = 3f;
+    [SerializeField] private float shootWhen = 1f;
     float shootCount  = 0.0f;
 
     public GameObject bulletPrefab;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        shootCount = shootWhen - .1f;
         player = GameObject.Find("playercombat");
     }
 

@@ -3,16 +3,19 @@ using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class combatplayer : MonoBehaviour
 {
+    public bool freeze=false;
     private int hp = 100;
-    private int damage = 10;
+    private int damage = 25;
     private float shootCool = .25f;
     private float shootCount = 0;
     private float invinCool = 1f;
     private float invinCount = 0;
     bool invin = false;
+    public Animator animator;
     private BoxCollider2D box;
     private Vector2 moveDelta, aimdir;
     private InputAction move;
@@ -23,13 +26,18 @@ public class combatplayer : MonoBehaviour
     [SerializeField] private float speed = 5f;
     [SerializeField] private float speed2 = 2.5f;
     [SerializeField] private GameObject combatBox, colBox;
-    [SerializeField] private Slider slider;
+    [SerializeField] private UnityEngine.UI.Slider slider;
+    public combatmanager manager;
+
     private Vector2 boundsMin, boundsMax, playerSize;
     private Camera cam;
     public GameObject bulletPrefab;
+    bool isWalking = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        animator = GetComponent<Animator>();
+        animator.SetBool("walking", false);
         shootCount = shootCool;
         box = GetComponent<BoxCollider2D>();
         move = InputSystem.actions.FindAction("Move");
@@ -60,8 +68,27 @@ public class combatplayer : MonoBehaviour
         GetComponent<SpriteRenderer>().material.color = color;
     }
     // Update is called once per frame
+    public void resetForWave()
+    {
+        if (animator != null)
+        {
+            animator.SetFloat("x", 0);
+            animator.SetFloat("y", 0);
+            animator.SetBool("walking", false);
+        }
+        freeze = true;
+        transform.position = Vector2.zero;
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
+    }
     void Update()
     {
+        if(freeze)
+        {
+            return;
+        }
         if(invin)
         {
             invinCount += Time.deltaTime;
@@ -86,24 +113,44 @@ public class combatplayer : MonoBehaviour
         aimdir = dir;
         moveDelta = move.ReadValue<Vector2>();
         //Debug.Log(moveDelta);
-        if (moveDelta.x > 0)
-        {
-            transform.localScale = Vector3.one;
-        }
-        else if (moveDelta.x < 0)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
+        
         Vector2 targ = new Vector2(transform.position.x, transform.position.y) + moveDelta;
 
         moveDelta *= (slowed) ? speed2 : speed;
         //Debug.Log(moveDelta);
+        if(moveDelta.magnitude > 0)
+        {
+            isWalking = true;
+        }
+        else
+        {
+            isWalking = false;
+        }
+
+        //moveDelta *= speed;
+        //Debug.Log(moveDelta);
+        rb.linearVelocity = moveDelta;
+        //Debug.Log(rb.linearVelocity);
+
+        if (isWalking)
+        {
+            animator.SetFloat("x", moveDelta.x);
+            animator.SetFloat("y", moveDelta.y);
+
+        }
+        animator.SetBool("walking", isWalking);
+
         rb.linearVelocity = moveDelta;
         //Debug.Log(rb.linearVelocity);
     }
     public void OnShoot(InputAction.CallbackContext ctx)
     {
-
+        if (freeze && ctx.performed == true)
+        {
+            freeze = false;
+            manager.spawnWave();
+            return;
+        }
         if (ctx.performed == true && shootCount>=shootCool && aimdir!=Vector2.zero)
         {
             shootCount = 0;
@@ -117,12 +164,22 @@ public class combatplayer : MonoBehaviour
         if(collider.gameObject.tag=="damages" && !invin)
         {
             hp -= damage;
-            slider.value = hp;
-            transparency(.5f);
-            invin = true;
-            colBox.GetComponent<Collider2D>().enabled = false;
-            //Debug.Log(collider.gameObject.name);
-            collider.gameObject.SendMessage("hitPlayer",SendMessageOptions.DontRequireReceiver);
+            if (hp <= 0)
+            {
+                animator.SetFloat("x", 0);
+                animator.SetFloat("y", 0);
+                animator.SetBool("walking", false);
+                manager.gameOver();
+            }
+            else
+            {
+                slider.value = hp;
+                transparency(.5f);
+                invin = true;
+                colBox.GetComponent<Collider2D>().enabled = false;
+                //Debug.Log(collider.gameObject.name);
+                collider.gameObject.SendMessage("hitPlayer", SendMessageOptions.DontRequireReceiver);
+            }
         }
     }
     public void OnCollisionEnter2D(Collision2D collision)
