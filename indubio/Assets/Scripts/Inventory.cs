@@ -11,6 +11,8 @@ public class Inventory : MonoBehaviour
 
     public event EventHandler<InventoryEvents> newItemAdded;
 
+    public List<slotImg> numSlots;
+
     public void AddItem(InvItem item)
     {
         Debug.Log("Adding item now");
@@ -26,7 +28,10 @@ public class Inventory : MonoBehaviour
                 Debug.Log("Collision");
                 collider.enabled = false;
                 n.Add(item);
+                
                 item.OnPickup();
+
+                numSlots[n.Count-1].currItem(item);
 
                 if (newItemAdded != null)
                 {

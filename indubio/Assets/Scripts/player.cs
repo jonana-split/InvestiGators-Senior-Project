@@ -78,7 +78,7 @@ public class player : MonoBehaviour
         InvItem item = collision.GetComponent<InvItem>();
         if (item != null)
         {
-            Debug.Log("Adding knife");
+            Debug.Log("Adding item");
             currentItem = item;
             collectItem = true;
             pressE.gameObject.SetActive(true);
