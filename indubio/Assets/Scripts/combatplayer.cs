@@ -21,7 +21,7 @@ public class combatplayer : MonoBehaviour
     private InputAction move;
     private InputAction slow, shoot;
     private Rigidbody2D rb;
-    private GameObject pivot;
+    public GameObject pivot;
     bool slowed = false;
     [SerializeField] private float speed = 5f;
     [SerializeField] private float speed2 = 2.5f;

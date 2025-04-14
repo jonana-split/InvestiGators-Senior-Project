@@ -36535,7 +36535,8 @@ PrefabInstance:
       propertyPath: m_AssetsPPU
       value: 64
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7010224839785143824, guid: a616d6619dc3c0040a38b6e139b5a3e4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
