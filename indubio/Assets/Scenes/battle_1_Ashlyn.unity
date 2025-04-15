@@ -468,9 +468,8 @@ MonoBehaviour:
   - "Ashlyn: I-I really hope someone here didn\u2019t murder him. You all are my
     closest friends, w-why would anyone do this to him? It must\u2019ve been an accident
     or something\u2026right? "
-  - 'Ashlyn: Thank you for letting some of my emotions out, I know it can be a lot
-    to take in so I appreciate it. Maybe this will be helpful, I actually wrote a
-    journal entry yesterday about our trip so far.'
+  - 'Ashlyn: Thank you for letting me vent some of my emotions out, I know it can
+    be a lot to take in so I appreciate it.'
   player: {fileID: 1698894104}
   clickPrompt: {fileID: 1309056257}
   hideOnGameOver:

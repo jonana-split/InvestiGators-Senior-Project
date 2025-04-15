@@ -450,27 +450,53 @@ MonoBehaviour:
   - {fileID: 6452644963227566216, guid: 1940802ea3e3dd941b5683285b59c266, type: 3}
   - {fileID: 6452644963227566216, guid: 93c19dbae1b37bb43805c348bebbc21a, type: 3}
   WavePositions:
-  - {x: 3, y: 6}
-  - {x: -3, y: -6}
+  - {x: 2, y: 4}
+  - {x: 2, y: -4}
   - {x: -3, y: 6}
   - {x: -3, y: -6}
   - {x: 3, y: -6}
-  - {x: -3, y: -6}
   - {x: 3, y: 6}
-  - {x: -3, y: 6}
-  enemiesInWave: 0000000003000000000000000100000002000000020000000300000001000000
-  numbersInWaves: 020000000300000003000000
+  - {x: 3, y: 6}
+  - {x: 3, y: 6}
+  - {x: 3, y: 6}
+  - {x: 3, y: 6}
+  - {x: 3, y: 6}
+  - {x: 3, y: 6}
+  - {x: 3, y: 6}
+  - {x: 3, y: 6}
+  - {x: 3, y: 6}
+  - {x: 3, y: 6}
+  - {x: 3, y: 6}
+  - {x: 3, y: 6}
+  - {x: 3, y: 6}
+  - {x: 3, y: 6}
+  enemiesInWave: 0300000003000000030000000300000003000000030000000300000003000000030000000300000003000000030000000300000003000000030000000300000003000000030000000300000003000000
+  numbersInWaves: 030000000300000004000000020000000300000005000000
   textbox: {fileID: 1964080663}
   waveDialog:
-  - "Olive: This whole situation is pretty crazy\u2026I feel so bad for Ashlyn, she
-    doesn\u2019t deserve this. *mumbles* but he didn\u2019t deserve her either\u2026"
-  - "Olive: Oh uh, I didn\u2019t mean to say that, I\u2019m sorry. I-I\u2026okay
-    fine, I\u2019ll fess up. I may have some feelings for Ashlyn\u2026b-but I swear
-    I didn\u2019t do this! I would never."
-  - "Olive: I never really liked Devin, I always thought he wasn\u2019t treating
-    Ashlyn well. But there is no way I would ever go as far as to murder him! I just
-    can\u2019t even see any of us doing that to him. "
-  - "Olive: I-I\u2019m sorry."
+  - "Alison: I\u2019m so sorry, I-I didn\u2019t know how to tell you guys. Things
+    got heated between Devin and I, and it all happened so fast\u2026"
+  - "Alison: I overheard Devin and Ashlyn fighting the day of the accident\u2026
+    The things he was saying to her and the names he was calling her were so vile,
+    I couldn\u2019t believe someone could treat my sister so horribly. "
+  - "Alison: I couldn\u2019t stop thinking about the words he said to her, so I made
+    a stupid decision. I decided to confront him that night. He went into his room
+    with overwhelming anger and just went off on him. All I wanted to do was protect
+    my sister. "
+  - "Alison: He said some awful things, like how she deserves to be berated, to be
+    put in her place. I-I just couldn\u2019t contain my fury. He kept making me angrier
+    and angrier. "
+  - "Alison: It escalated to the point of him taking that knife off his nightstand
+    and threatening me with it. I was so scared and angry that I impulsively tried
+    to take it from him. I don\u2019t even know how it happened cause it was so fast
+    but it accidentally went towards him\u2026 (Fear, anger, anxiety)"
+  - "Alison: I-I didn\u2019t know what to do. I tried to help him but it was too
+    fast, he was gone. I was so scared of getting help because I thought I\u2019d
+    be arrested for murder. I just mindlessly tried to cover my tracks by hiding
+    the knife and key, but clearly that didn\u2019t work\u2026 And honestly, I\u2019m
+    glad it didn\u2019t because I couldn\u2019t live with myself if I had to hide
+    this secret from my sister. "
+  - "Alison: I am so sorry\u2026"
   player: {fileID: 1698894104}
   clickPrompt: {fileID: 1309056257}
   hideOnGameOver:
@@ -485,10 +511,13 @@ MonoBehaviour:
   waveCounter: {fileID: 1266316601}
   wintext: {fileID: 980808413}
   waveImages:
-  - {fileID: -3638371415660289885, guid: e07277f6a106e4848b3a6cb0084143b8, type: 3}
-  - {fileID: -3638371415660289885, guid: e07277f6a106e4848b3a6cb0084143b8, type: 3}
-  - {fileID: -3638371415660289885, guid: e07277f6a106e4848b3a6cb0084143b8, type: 3}
-  - {fileID: -3638371415660289885, guid: e07277f6a106e4848b3a6cb0084143b8, type: 3}
+  - {fileID: 2629645292549484523, guid: 8108d335cc0d94447b20253a4ef44396, type: 3}
+  - {fileID: 2629645292549484523, guid: 8108d335cc0d94447b20253a4ef44396, type: 3}
+  - {fileID: 2629645292549484523, guid: 8108d335cc0d94447b20253a4ef44396, type: 3}
+  - {fileID: 2629645292549484523, guid: 8108d335cc0d94447b20253a4ef44396, type: 3}
+  - {fileID: 2629645292549484523, guid: 8108d335cc0d94447b20253a4ef44396, type: 3}
+  - {fileID: 2629645292549484523, guid: 8108d335cc0d94447b20253a4ef44396, type: 3}
+  - {fileID: 2629645292549484523, guid: 8108d335cc0d94447b20253a4ef44396, type: 3}
 --- !u!212 &771961923
 SpriteRenderer:
   m_ObjectHideFlags: 0
