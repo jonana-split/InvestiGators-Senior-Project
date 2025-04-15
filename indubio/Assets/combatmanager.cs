@@ -7,7 +7,7 @@ public class combatmanager : MonoBehaviour
 {
     public static int enemyCount = 0;
     int enemyIndex = 0;
-    public GameObject[] enemyTypes; //0 = test, 1 = nerv, 2 = scare, 3= anger\
+    public GameObject[] enemyTypes; //0 = sad, 1 = anxious, 2 = scare, 3= anger
     public Vector2[] WavePositions;
     public int[] enemiesInWave;
     public int[] numbersInWaves;

@@ -12,7 +12,7 @@ public class angryenemy : MonoBehaviour
     float moveCool = 2;
     float moveTime = 0;
     bool freeze = false;
-    float freezeCool = 1.25f;
+    float freezeCool = .5f;
     GameObject player;
     Vector2 moveDir = Vector2.one.normalized;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
