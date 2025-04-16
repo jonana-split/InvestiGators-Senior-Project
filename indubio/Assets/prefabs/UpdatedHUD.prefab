@@ -691,6 +691,7 @@ GameObject:
   m_Component:
   - component: {fileID: 31083001797600050}
   - component: {fileID: 5545774233839121268}
+  - component: {fileID: 6516930118969572157}
   m_Layer: 0
   m_Name: InventoryManager
   m_TagString: Untagged
@@ -726,6 +727,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 2237528006063132797}
+--- !u!114 &6516930118969572157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3275864951987465900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5931dc4eff1d2e84082fceee53c77b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
+  pressE: {fileID: 0}
+  doorLockedTxt: {fileID: 0}
 --- !u!1 &3588295053529673520
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,7 +1309,7 @@ GameObject:
   - component: {fileID: 2047468756556674661}
   m_Layer: 5
   m_Name: UpdatedHUD
-  m_TagString: Untagged
+  m_TagString: HUDDontDestroy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2455,8 +2471,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 109.33453, y: 244.82355}
-  m_SizeDelta: {x: 64, y: 64}
+  m_AnchoredPosition: {x: 114.64526, y: 250.7243}
+  m_SizeDelta: {x: 68.9544, y: 69.5049}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1070785124815679613
 CanvasRenderer:
@@ -2486,7 +2502,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3763752930381237044, guid: bc52064244f282043ae4c13939fc4885, type: 3}
+  m_Sprite: {fileID: 1428892310142603471, guid: 2d1f4d28cd1587f488e95a6e0447bbf7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

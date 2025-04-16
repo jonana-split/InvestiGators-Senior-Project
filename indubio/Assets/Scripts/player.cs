@@ -19,9 +19,9 @@ public class player : MonoBehaviour
     private float vertical;
     private Vector2 direction;
 
-    public Inventory inventory;
-    public TextMeshProUGUI pressE;
-    public TextMeshProUGUI doorLockedTxt;
+    Inventory inventory;
+    TextMeshProUGUI pressE;
+    TextMeshProUGUI doorLockedTxt;
 
     private InvItem currentItem;
     private bool collectItem = false;
@@ -31,14 +31,18 @@ public class player : MonoBehaviour
         box = GetComponent<BoxCollider2D>();
         move = InputSystem.actions.FindAction("Move");
         rb = GetComponent<Rigidbody2D>();
-        var hud = GameObject.FindWithTag("HUDDontDestroy").transform.Find("InventoryOpenBtn").gameObject;
+        var inventoryUI = GameObject.FindWithTag("HUDDontDestroy");
+        var hud = inventoryUI.transform.Find("InventoryOpenBtn").gameObject;
+        inventory = GameObject.FindWithTag("Inventory").GetComponent<Inventory>();
+        pressE = inventoryUI.transform.Find("PressE").gameObject.GetComponent<TextMeshProUGUI>();
+        doorLockedTxt = inventoryUI.transform.Find("doorlocked").GetComponent<TextMeshProUGUI>();
         if (hud != null)
         {
             hud.SetActive(true);
-            Debug.Log("EOJefbouef");
+            //Debug.Log("EOJefbouef");
         }else
         {
-            Debug.Log("dsffdfe");
+            //Debug.Log("dsffdfe");
         }
     }
 

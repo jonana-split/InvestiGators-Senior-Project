@@ -11,6 +11,14 @@ TagManager:
   - Journal
   - locked
   - NPC
+  - HUDDontDestroy
+  - Inventory
+  - PressE
+  - DoorLocked
+  - key
+  - knife
+  - game
+  - fitness
   layers:
   - Default
   - TransparentFX
