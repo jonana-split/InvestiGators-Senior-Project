@@ -3504,6 +3504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25e9d72c34f34de4ba430f5b391cee1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: FirstNight_MainRoom
   lastDoorNumber: -1
 --- !u!4 &2049783400
 Transform:
@@ -3729,11 +3730,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3998659291252903759, guid: edb4d8957e23bb34488877c089546960, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.09
+      value: 2.82
       objectReference: {fileID: 0}
     - target: {fileID: 3998659291252903759, guid: edb4d8957e23bb34488877c089546960, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.39
+      value: -3.57
       objectReference: {fileID: 0}
     - target: {fileID: 3998659291252903759, guid: edb4d8957e23bb34488877c089546960, type: 3}
       propertyPath: m_LocalPosition.z
