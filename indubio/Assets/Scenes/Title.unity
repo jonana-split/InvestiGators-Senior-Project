@@ -35459,21 +35459,21 @@ MonoBehaviour:
 
     A weekend getaway with your
     closest friends on a secluded island, no cell service, no stress, just ocean
-    air and good company. The mansion was a gift from a family connection, and the
-    plan was simple: unwind, reconnect, and toast to your final year of college.
+    air and good company. The mansion belonged to the uncle of two of your friends,
+    twin sisters. The plan was simple: unwind, reconnect, and toast to your final
+    year of college.
 
-    But
-    that was before the storm hit.
+    But that was before the storm hit.
 
-    Before you woke to screaming.
+    Before you woke
+    to screaming.
 
-    Before
-    you found one of your friends dead.
+    Before you found one of your friends dead.
 
-    Now, help cannot reach you. The island
-    is cut off, and your mentor, an experienced private investigator, cannot make
-    it through the storm. That leaves only you: their apprentice. Inexperienced,
-    unsure, and overwhelmed.'
+    Now, help
+    cannot reach you. The island is cut off, and your mentor, an experienced private
+    investigator, cannot make it through the storm. That leaves only you: their apprentice.
+    Inexperienced, unsure, and overwhelmed.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7e30198af612c7e45b6e27fc88fa8ea9, type: 2}
   m_sharedMaterial: {fileID: -664134713226018549, guid: 7e30198af612c7e45b6e27fc88fa8ea9, type: 2}
@@ -36485,7 +36485,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1629047608581722986, guid: a616d6619dc3c0040a38b6e139b5a3e4, type: 3}
       propertyPath: orthographic size
-      value: 6.5625
+      value: 1.9921875
       objectReference: {fileID: 0}
     - target: {fileID: 3811699780426163997, guid: a616d6619dc3c0040a38b6e139b5a3e4, type: 3}
       propertyPath: m_Name
