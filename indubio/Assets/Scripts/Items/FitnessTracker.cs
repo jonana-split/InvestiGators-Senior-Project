@@ -2,13 +2,13 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class Note: MonoBehaviour, InvItem
+public class FitnessTracker: MonoBehaviour, InvItem
 {
     public string Name
     {
         get
         {
-            return "Note";
+            return "Fitness Tracker";
         }
     }
 

@@ -2,13 +2,13 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class Screwdriver: MonoBehaviour, InvItem
+public class GameConsole: MonoBehaviour, InvItem
 {
     public string Name
     {
         get
         {
-            return "Screwdriver";
+            return "Game Console";
         }
     }
 
