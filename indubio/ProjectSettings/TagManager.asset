@@ -10,6 +10,7 @@ TagManager:
   - Knife
   - Journal
   - locked
+  - NPC
   layers:
   - Default
   - TransparentFX
