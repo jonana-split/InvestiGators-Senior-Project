@@ -21,6 +21,8 @@ public class player : MonoBehaviour
 
     public Inventory inventory;
     public TextMeshProUGUI pressE;
+    public TextMeshProUGUI doorLockedTxt;
+
     private InvItem currentItem;
     private bool collectItem = false;
 
@@ -73,7 +75,6 @@ public class player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Item collided");
         InvItem item = collision.GetComponent<InvItem>();
         if (item != null)
         {
@@ -83,6 +84,12 @@ public class player : MonoBehaviour
             pressE.gameObject.SetActive(true);
             
         }
+
+        if (collision.gameObject.tag == "locked")
+        {
+            Debug.Log("Door collided");
+            doorLockedTxt.gameObject.SetActive(true);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -91,6 +98,11 @@ public class player : MonoBehaviour
         {
             collectItem = false;
             pressE.gameObject.SetActive(false);
+        }
+
+        if (collision.gameObject.tag == "locked")
+        {
+            doorLockedTxt.gameObject.SetActive(false);
         }
     }
 
