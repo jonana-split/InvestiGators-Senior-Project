@@ -77,6 +77,9 @@ public class combatplayer : MonoBehaviour
             animator.SetBool("walking", false);
         }
         freeze = true;
+        invinCount = 0;
+        invin = false;
+        transparency(1);
         transform.position = Vector2.zero;
         if (rb != null)
         {
