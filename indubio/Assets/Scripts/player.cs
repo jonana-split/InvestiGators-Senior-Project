@@ -83,6 +83,9 @@ public class player : MonoBehaviour
             collectItem = true;
             pressE.gameObject.SetActive(true);
             
+        }else if (collision.gameObject.tag == "NPC")
+        {
+            pressE.gameObject.SetActive(true);
         }
 
         
@@ -95,8 +98,12 @@ public class player : MonoBehaviour
             collectItem = false;
             pressE.gameObject.SetActive(false);
         }
+        else if (collision.gameObject.tag == "NPC")
+        {
+            pressE.gameObject.SetActive(false);
+        }
 
-     
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
