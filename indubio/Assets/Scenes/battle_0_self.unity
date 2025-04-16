@@ -480,6 +480,7 @@ MonoBehaviour:
   - {fileID: 603729400}
   - {fileID: 1964080662}
   - {fileID: 1309056257}
+  - {fileID: 899963055}
   showOnGameOver:
   - {fileID: 752458103}
   - {fileID: 938998339}

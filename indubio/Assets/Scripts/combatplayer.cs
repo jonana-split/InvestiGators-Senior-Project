@@ -33,6 +33,8 @@ public class combatplayer : MonoBehaviour
     private Camera cam;
     public GameObject bulletPrefab;
     bool isWalking = false;
+    Color norm =new Color(1.0f, 1.0f, 1.0f, 1.0f);
+    Color ouch = new Color(1.0f, .5f, .5f, .5f);
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -61,11 +63,9 @@ public class combatplayer : MonoBehaviour
         Vector3 screenMax2 = cam.WorldToScreenPoint(max);
         playerSize = screenMax2- screenMin2;
     }
-    void transparency(float a)
+    void transparency(Color c)
     {
-        var color = GetComponent<SpriteRenderer>().material.color;
-        color.a = a;
-        GetComponent<SpriteRenderer>().material.color = color;
+        GetComponent<SpriteRenderer>().material.color = c;
     }
     // Update is called once per frame
     public void resetForWave()
@@ -79,7 +79,7 @@ public class combatplayer : MonoBehaviour
         freeze = true;
         invinCount = 0;
         invin = false;
-        transparency(1);
+        transparency(norm);
         transform.position = Vector2.zero;
         if (rb != null)
         {
@@ -99,7 +99,7 @@ public class combatplayer : MonoBehaviour
             {
                 invinCount = 0;
                 invin = false;
-                transparency(1);
+                transparency(norm);
                 colBox.GetComponent<Collider2D>().enabled = true;
             }
         }
@@ -177,7 +177,7 @@ public class combatplayer : MonoBehaviour
             else
             {
                 slider.value = hp;
-                transparency(.5f);
+                transparency(ouch);
                 invin = true;
                 colBox.GetComponent<Collider2D>().enabled = false;
                 //Debug.Log(collider.gameObject.name);
