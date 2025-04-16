@@ -85,11 +85,7 @@ public class player : MonoBehaviour
             
         }
 
-        if (collision.gameObject.tag == "locked")
-        {
-            Debug.Log("Door collided");
-            doorLockedTxt.gameObject.SetActive(true);
-        }
+        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -100,6 +96,20 @@ public class player : MonoBehaviour
             pressE.gameObject.SetActive(false);
         }
 
+     
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "locked")
+        {
+            Debug.Log("Door collided");
+            doorLockedTxt.gameObject.SetActive(true);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
         if (collision.gameObject.tag == "locked")
         {
             doorLockedTxt.gameObject.SetActive(false);

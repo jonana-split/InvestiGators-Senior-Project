@@ -7,6 +7,7 @@ public class SceneManagerCustom : MonoBehaviour
 
     private GameObject player;
     private GameObject[] doors;
+    public string sceneName;
     public int lastDoorNumber = -1; // Default to -1 if no previous door
 
     void Awake()
@@ -33,7 +34,7 @@ public class SceneManagerCustom : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         doors = GameObject.FindGameObjectsWithTag("Door");
 
-        if (scene.name == "MainRoom" && lastDoorNumber != -1)
+        if (scene.name == sceneName && lastDoorNumber != -1)
         {
             // Find the door the player came from and spawn them next to it
             foreach (GameObject door in doors)
