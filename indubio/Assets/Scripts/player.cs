@@ -31,7 +31,15 @@ public class player : MonoBehaviour
         box = GetComponent<BoxCollider2D>();
         move = InputSystem.actions.FindAction("Move");
         rb = GetComponent<Rigidbody2D>();
-
+        var hud = GameObject.FindWithTag("HUDDontDestroy").transform.Find("InventoryOpenBtn").gameObject;
+        if (hud != null)
+        {
+            hud.SetActive(true);
+            Debug.Log("EOJefbouef");
+        }else
+        {
+            Debug.Log("dsffdfe");
+        }
     }
 
     // Update is called once per frame

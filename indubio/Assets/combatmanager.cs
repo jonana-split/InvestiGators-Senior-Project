@@ -105,7 +105,7 @@ public class combatmanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(wave + " "+enemyCount);
+        //Debug.Log(wave + " "+enemyCount);
         if(enemyCount == 0 && !WaveSpawned)
         {
           

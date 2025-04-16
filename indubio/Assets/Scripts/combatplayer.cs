@@ -62,6 +62,12 @@ public class combatplayer : MonoBehaviour
         Vector3 screenMin2 = cam.WorldToScreenPoint(min);
         Vector3 screenMax2 = cam.WorldToScreenPoint(max);
         playerSize = screenMax2- screenMin2;
+        var hud = GameObject.FindWithTag("HUDDontDestroy").transform.Find("InventoryOpenBtn").gameObject;
+        if (hud != null)
+        {
+            Debug.Log("feobfebiofewobef");
+            hud.SetActive(false);
+        }
     }
     void transparency(Color c)
     {
