@@ -9,6 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
+    path: Assets/Scenes/battle_1_Ashlyn.unity
+    guid: d8b600f89fb8f1a479de65de0ef5748f
+  - enabled: 1
+    path: Assets/Scenes/battle_0_self.unity
+    guid: 1bd78d5cb70bb244b83e988b963e8bb3
+  - enabled: 1
+    path: Assets/Scenes/battle_3_Alison.unity
+    guid: 63b107975f552c84d8866a2a9108df7a
+  - enabled: 1
+    path: Assets/Scenes/battle_2_Olive.unity
+    guid: e22033e665392d544be8733242cb9c8b
+  - enabled: 1
+    path: Assets/Scenes/battle_4_Alison_2.unity
+    guid: bbc7887821c3d9447b96e1676f8086ff
+  - enabled: 1
     path: Assets/Scenes/MainRoom.unity
     guid: 85ea0f3602bf91c43aeffe3d44f076ab
   - enabled: 1

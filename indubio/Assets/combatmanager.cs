@@ -7,7 +7,7 @@ public class combatmanager : MonoBehaviour
 {
     public static int enemyCount = 0;
     int enemyIndex = 0;
-    public GameObject[] enemyTypes; //0 = test, 1 = nerv, 2 = scare, 3= anger\
+    public GameObject[] enemyTypes; //0 = sad, 1 = anxious, 2 = scare, 3= anger
     public Vector2[] WavePositions;
     public int[] enemiesInWave;
     public int[] numbersInWaves;
@@ -22,16 +22,33 @@ public class combatmanager : MonoBehaviour
     public GameObject[] showOnGameOver;
     public string nextScene;
     public TextMeshProUGUI waveCounter;
+    public GameObject wintext;
+    public Sprite[] waveImages;
+    SpriteRenderer sp;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void updateWaveCounter()
+    void updateWaveTextImage()
     {
         if (waveCounter != null)
         {
-            waveCounter.text = "Wave: " + (wave+1) + "/" + numbersInWaves.Length;
+            waveCounter.text = "Wave: " + (wave + 1) + "/" + numbersInWaves.Length;
+        }
+        if (wave < numbersInWaves.Length) //needs to be 1 more than the rest of the arrays bcs of closing dialog
+        {
+            textbox.text = waveDialog[wave];
+            sp.sprite = waveImages[wave];
+        }
+        else if (wave == numbersInWaves.Length)
+        {
+            textbox.text = waveDialog[wave];
+            waveCounter.enabled = false;
+            wintext.SetActive(true);
+            sp.sprite = waveImages[wave];
+
         }
     }
     public void gameOver()
     {
+        player.pivot.SetActive(false);
         Time.timeScale = 0;
         foreach (GameObject go in hideOnGameOver) { 
             go.SetActive(false);
@@ -43,18 +60,21 @@ public class combatmanager : MonoBehaviour
     }
     public void Reset()
     {
+        wave = 0;
+        enemyCount = 0;
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     void Start()
     {
-        updateWaveCounter();
-        clickPrompt.SetActive(true);
+        
+        
         //textbox = textboxObj.GetComponent<TextMeshPro>();
-        textbox.text = waveDialog[wave];
         player.resetForWave();
         player.manager = this;
-        
+        sp = GetComponent<SpriteRenderer>();
+        updateWaveTextImage();
+        clickPrompt.SetActive(true);
     }
     
     void spawn()
@@ -85,19 +105,14 @@ public class combatmanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(wave + " "+enemyCount);
         if(enemyCount == 0 && !WaveSpawned)
         {
           
             wave++;
-            updateWaveCounter();
-            if (wave < numbersInWaves.Length) //needs to be 1 more than the rest of the arrays bcs of closing dialog
-            {
-                textbox.text = waveDialog[wave];
-            }else if (wave == numbersInWaves.Length)
-            {
-                textbox.text = waveDialog[wave];
-                waveCounter.text = "Combat Complete";
-            }
+            updateWaveTextImage();
+
+
             var bullets = GameObject.FindGameObjectsWithTag("damages");
             foreach (GameObject b in bullets)
             {
