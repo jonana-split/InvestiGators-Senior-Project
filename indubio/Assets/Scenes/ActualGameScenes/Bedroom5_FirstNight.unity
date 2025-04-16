@@ -742,7 +742,7 @@ GameObject:
   - component: {fileID: 488832981}
   m_Layer: 6
   m_Name: Ashlyn
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -781,8 +781,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.006711073, y: -0.20074803}
-  m_Size: {x: 0.14487706, y: 0.14487706}
+  m_Offset: {x: 0.019233227, y: -0.03796071}
+  m_Size: {x: 0.8544626, y: 1.7477056}
   m_Direction: 0
 --- !u!95 &488832977
 Animator:
@@ -957,7 +957,7 @@ GameObject:
   - component: {fileID: 581648213}
   m_Layer: 0
   m_Name: Olive
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -996,8 +996,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.021772165, y: -0.19289929}
-  m_Size: {x: 0.13743664, y: 0.15235156}
+  m_Offset: {x: -0.050990283, y: -0.06767833}
+  m_Size: {x: 0.9638947, y: 1.7903526}
   m_Direction: 0
 --- !u!95 &581648209
 Animator:
@@ -3145,7 +3145,7 @@ GameObject:
   - component: {fileID: 1374918173}
   m_Layer: 0
   m_Name: Alison
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3206,8 +3206,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0019299984, y: -0.1763326}
-  m_Size: {x: 0.13460562, y: 0.13873398}
+  m_Offset: {x: 0.023651838, y: -0.010050058}
+  m_Size: {x: 0.8125262, y: 1.5969048}
   m_Direction: 0
 --- !u!212 &1374918170
 SpriteRenderer:
@@ -3836,7 +3836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -4889,6 +4889,14 @@ PrefabInstance:
     - target: {fileID: 6452686891710824474, guid: edb4d8957e23bb34488877c089546960, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902500517405964396, guid: edb4d8957e23bb34488877c089546960, type: 3}
+      propertyPath: pressE
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902500517405964396, guid: edb4d8957e23bb34488877c089546960, type: 3}
+      propertyPath: doorLockedTxt
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
