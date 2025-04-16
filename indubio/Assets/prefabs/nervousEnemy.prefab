@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2463290483670040353}
   - component: {fileID: 7765679477921616231}
-  - component: {fileID: 1807534028597246763}
   - component: {fileID: 1125215216949280250}
   - component: {fileID: 8838056283527407311}
-  - component: {fileID: 5411446302341364589}
+  - component: {fileID: 5553082389899671689}
   m_Layer: 7
   m_Name: nervousEnemy
   m_TagString: damages
@@ -80,8 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: -1340631149
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1663183816, guid: c63f3852824ed944aadeda0e73764124, type: 3}
-  m_Color: {r: 0.63421154, g: 0, b: 1, a: 1}
+  m_Sprite: {fileID: 7158942930760888583, guid: 8a72d02101e430a40b3fd9fbe1a3c0cc, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -91,28 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1807534028597246763
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6452644963227566216}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 43957f8e61066264da222ac6d148f0e5, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!50 &1125215216949280250
 Rigidbody2D:
   serializedVersion: 5
@@ -154,10 +131,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   speed2: 2.5
-  shootWhen: 2
+  shootWhen: 1
   bulletPrefab: {fileID: 7056173824349841222, guid: 5dbccf813b771e343bf525f7f2505570, type: 3}
---- !u!70 &5411446302341364589
-CapsuleCollider2D:
+--- !u!58 &5553082389899671689
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -186,10 +163,9 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.92, y: 1.75}
-  m_Direction: 0
+  m_Offset: {x: -0.04, y: 0}
+  m_Radius: 0.7301049

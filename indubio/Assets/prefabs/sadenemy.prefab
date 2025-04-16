@@ -10,12 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2463290483670040353}
   - component: {fileID: 7765679477921616231}
-  - component: {fileID: 1807534028597246763}
   - component: {fileID: 1125215216949280250}
   - component: {fileID: 7678241980731106871}
-  - component: {fileID: 655771868728391022}
+  - component: {fileID: 6860938250116990348}
   m_Layer: 7
-  m_Name: enemytest
+  m_Name: sadenemy
   m_TagString: damages
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,8 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: -1340631149
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1663183816, guid: c63f3852824ed944aadeda0e73764124, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.79045916, a: 1}
+  m_Sprite: {fileID: 5612855306789754151, guid: 20cbd59ebdec159458e487c778704a9c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -91,28 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1807534028597246763
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6452644963227566216}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 43957f8e61066264da222ac6d148f0e5, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!50 &1125215216949280250
 Rigidbody2D:
   serializedVersion: 5
@@ -154,10 +131,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   speed2: 2.5
-  shootWhen: 3
+  shootWhen: 1
   bulletPrefab: {fileID: 7056173824349841222, guid: b6c757b16f868e743b7c6fbedd8b67b6, type: 3}
---- !u!70 &655771868728391022
-CapsuleCollider2D:
+--- !u!60 &6860938250116990348
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -186,10 +163,33 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.92, y: 1.75}
-  m_Direction: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.40625, y: 1.96875}
+    newSize: {x: 0.46, y: 0.58}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.0636988, y: 0.8871342}
+      - {x: -0.0072546005, y: 0.95956016}
+      - {x: -0.08060679, y: 0.84541214}
+      - {x: -0.19172685, y: 0.6613196}
+      - {x: -0.66178364, y: -0.2035414}
+      - {x: -0.63612497, y: -0.57989377}
+      - {x: -0.3652169, y: -0.86278236}
+      - {x: -0.14688905, y: -0.95864177}
+      - {x: 0.15719932, y: -0.9557732}
+      - {x: 0.57996523, y: -0.6764305}
+      - {x: 0.6450199, y: -0.43758082}
+      - {x: 0.6659028, y: -0.22205086}
+      - {x: 0.49770838, y: 0.108365744}
+  m_UseDelaunayMesh: 0

@@ -26,6 +26,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bedroom5.unity
     guid: 2c787c53d92d00b4d8c79df22c4ebd09
+  - enabled: 1
+    path: Assets/Scenes/WineCellar.unity
+    guid: 7e27c772b0d4b1e41bbf12c9172078c0
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 2fa56857e646d1d44bb6f8ddd2c41e6c
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: d3830b21339ff8146a695c111a0c6080
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
