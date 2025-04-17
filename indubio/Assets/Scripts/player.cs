@@ -44,6 +44,23 @@ public class player : MonoBehaviour
         {
             //Debug.Log("dsffdfe");
         }
+
+        if (Inventory.keyCol)
+        {
+            GameObject.FindWithTag("key").SetActive(false);
+        }
+        if (Inventory.knifeCol)
+        {
+            GameObject.FindWithTag("knife").SetActive(false);
+        }
+        if (Inventory.fitCol)
+        {
+            GameObject.FindWithTag("fitness").SetActive(false);
+        }
+        if (Inventory.gameCol)
+        {
+            GameObject.FindWithTag("game").SetActive(false);
+        }
     }
 
     // Update is called once per frame

@@ -13,6 +13,8 @@ public class Inventory : MonoBehaviour
 
     public List<slotImg> numSlots;
 
+    public static bool keyCol = false, gameCol = false, fitCol = false, knifeCol = false;
+
     public void AddItem(InvItem item)
     {
         Debug.Log("Adding item now");
@@ -30,6 +32,20 @@ public class Inventory : MonoBehaviour
                 n.Add(item);
                 
                 item.OnPickup();
+
+                if(item.Name == "Key")
+                {
+                    keyCol = true;
+                }else if(item.Name == "Knife")
+                {
+                    knifeCol = true;
+                }else if(item.Name == "Game Console")
+                {
+                    gameCol = true;
+                }else if(item.Name == "Fitness Tracker")
+                {
+                    fitCol = true;
+                }
 
                 numSlots[n.Count-1].currItem(item);
 
