@@ -20,7 +20,7 @@ public class DialogueTrigger : MonoBehaviour
     public bool hasBeenUsed = false;
     bool inArea = false;
     int numTimeTalk; //I want this variable to be 0 the first time the game is loaded and stay consistent when switching back and forth to the scene
-    bool hasStartedDialogue = false;
+
 
     // public bool useCollision; // unused for now
 
@@ -35,17 +35,9 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (!hasBeenUsed && inArea && Input.GetKeyDown(KeyCode.E) && nextTime < Time.timeSinceLevelLoad)
         {
-            if (!hasStartedDialogue)
-            {
-                hasStartedDialogue = true;
-                TriggerDialogue();
-                nextTime = Time.timeSinceLevelLoad + waitTime;
-            }
-            else if (nextTime < Time.timeSinceLevelLoad){
-                //Debug.Log("Advance");
-                nextTime = Time.timeSinceLevelLoad + waitTime;
-                manager.AdvanceDialogue();
-            }
+            //Debug.Log("Advance");
+            nextTime = Time.timeSinceLevelLoad + waitTime;
+            manager.AdvanceDialogue();
         }
     }
 
@@ -107,7 +99,7 @@ public class DialogueTrigger : MonoBehaviour
         if (other.gameObject.tag == "Player" && !hasBeenUsed)
         {
             manager.currentTrigger = this;
-            //TriggerDialogue();
+            TriggerDialogue();
             //Debug.Log("Collision");
         }
     }
