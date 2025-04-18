@@ -47,19 +47,31 @@ public class player : MonoBehaviour
 
         if (Inventory.keyCol)
         {
-            GameObject.FindWithTag("key").SetActive(false);
+            if (GameObject.FindWithTag("key"))
+            {
+                GameObject.FindWithTag("key").SetActive(false);
+            }
         }
         if (Inventory.knifeCol)
         {
-            GameObject.FindWithTag("knife").SetActive(false);
+            if (GameObject.FindWithTag("knife"))
+            {
+                GameObject.FindWithTag("knife").SetActive(false);
+            }
         }
         if (Inventory.fitCol)
         {
-            GameObject.FindWithTag("fitness").SetActive(false);
+            if (GameObject.FindWithTag("fitness"))
+            {
+                GameObject.FindWithTag("fitness").SetActive(false);
+            }
         }
         if (Inventory.gameCol)
         {
-            GameObject.FindWithTag("game").SetActive(false);
+            if (GameObject.FindWithTag("game"))
+            {
+                GameObject.FindWithTag("game").SetActive(false);
+            }
         }
     }
 
