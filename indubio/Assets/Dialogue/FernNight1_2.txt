@@ -1,0 +1,2 @@
+[LEVEL=1]
+[NAME=Fern][SPEAKERSPRITE=Fern](I can’t believe that just happened. My first murder case, and it’s with my friends?? Who could’ve done this? None of them could be a murderer…right? I’m so confused. I don’t know what to do. Did I make the right decision sending them to their rooms or will that make it worse? It all happened so fast.)

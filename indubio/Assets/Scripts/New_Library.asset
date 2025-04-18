@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3da6dca4e6c89ca44b5320800c31c47b, type: 3}
+  m_Name: New_Library
+  m_EditorClassIdentifier: 
+  speakerLibrary:
+  - name: Ashlyn
+    sprite: {fileID: -8674440291992414907, guid: 3bb370f382f17c44aae14b0c97c220f0, type: 3}
+  - name: Fern
+    sprite: {fileID: -5115618752126089108, guid: 30a085f9daa89814683f53b5493f2ce9, type: 3}
+  - name: Olive
+    sprite: {fileID: -3638371415660289885, guid: e07277f6a106e4848b3a6cb0084143b8, type: 3}
+  - name: Allison
+    sprite: {fileID: 2629645292549484523, guid: 8108d335cc0d94447b20253a4ef44396, type: 3}

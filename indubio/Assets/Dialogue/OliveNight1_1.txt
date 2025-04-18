@@ -1,0 +1,3 @@
+[NAME=Olive][SPEAKERSPRITE=Olive]What happened??
+[NAME=Olive][SPEAKERSPRITE=Olive]I’m so sorry, Ashlyn… I’m here for you.
+
