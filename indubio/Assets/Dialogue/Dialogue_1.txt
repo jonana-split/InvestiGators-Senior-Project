@@ -1,0 +1,3 @@
+[NAME=Ashlyn][SPEAKERSPRITE=Ashlyn]Ribbit... Whoa! Look at you! A little lost, are we?
+[NAME=Fern][SPEAKERSPRITE=Fern]Where... am I?
+

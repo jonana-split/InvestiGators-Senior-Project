@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262756b8394224648a1fd65c48681db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: Bedroom3_FirstNight
+  targetScene: Bedroom3_FirstNightBefore
   doorNumber: 3
 --- !u!61 &21713901
 BoxCollider2D:

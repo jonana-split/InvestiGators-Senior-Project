@@ -1,0 +1,2 @@
+[LEVEL=1]
+[NAME=Fern][SPEAKERSPRITE=Fern]*inhales*, *exhales*. (Everything’s gonna be okay.)

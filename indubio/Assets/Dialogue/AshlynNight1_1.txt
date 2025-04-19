@@ -1,0 +1,5 @@
+[NAME=Ashlyn][SPEAKERSPRITE=Ashlyn]No, no... who could have done this to him???
+[NAME=Ashlyn][SPEAKERSPRITE=Ashlyn]My beloved Devin...
+[NAME=Fern][SPEAKERSPRITE=Fern](Hm, looks like a stab wound. Why is there no weapon anywhere then? Couldn’t have been a suicide…)
+[NAME=Fern][SPEAKERSPRITE=Fern]I’m sorry this happened, Ashlyn. Unfortunately, this looks like a murder. To be safe, I think everyone should go stay in their rooms for the time being since we potentially have a murderer among us. I’ll help resolve this in the morning.
+[NAME=Fern][SPEAKERSPRITE=Fern](I should go get some sleep as well...)
