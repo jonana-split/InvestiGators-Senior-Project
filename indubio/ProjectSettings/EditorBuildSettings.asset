@@ -65,6 +65,87 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ActualGameScenes/Bedroom3_FirstNightBefore.unity
     guid: 54fd5c13876b10c42aadf7ff905995fc
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 1/Bedroom1_Day1.unity
+    guid: ea13f2995326f034aaf05b8691fb96e3
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 1/Bedroom2_Day1.unity
+    guid: c438702fba272eb4bb3f18d394c05a41
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 1/Bedroom3_Day1_NOMONOLOGUE.unity
+    guid: f024dd9a5476cde47906746b37bf24b7
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 1/Bedroom3_Day1_START.unity
+    guid: 94b18ef15e4e33543b71af7ff4c43612
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 1/Bedroom4_Day1_1_INITIAL.unity
+    guid: b3d2cb86cda31e041bc7b9b3520bf2ec
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 1/Bedroom4_Day1_2_BEFORE_COMBAT.unity
+    guid: 2de5b211e1865df449c866c51a512ece
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 1/Bedroom4_Day1_3_AFTER_COMBAT.unity
+    guid: f88b86ce29a2f8b43942fb59dbdb8fb8
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 1/Bedroom5_Day1.unity
+    guid: 12220005dd6032d43a5cf22c9a13f53f
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 1/MainRoom_Day1.unity
+    guid: 21b7c32dae5bee84192945fc7e82cf07
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 1/MainRoom_Day1_MONOLOGUE.unity
+    guid: 24c2bb1ac1d71d54e9fab36160229492
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 2/Bedroom1_Day2.unity
+    guid: 91b25a252e425f747871be761d5fbf61
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 2/Bedroom2_Day2_AFTERCOMBAT.unity
+    guid: 243fd763f294d7442a6d6f606cfa72e7
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 2/Bedroom2_Day2_INITIAL.unity
+    guid: 92505869e3637de4d917fba24f323c19
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 2/Bedroom3_Day2_NOMONOLOGUE.unity
+    guid: 551a930b12d3b774f9a34312d6cd5fff
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 2/Bedroom3_Day2_START.unity
+    guid: 24ffa39c95385dc439f9be440cc02622
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 2/Bedroom4_Day2.unity
+    guid: 00c525659e223ed4597172fa25fa4859
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 2/Bedroom5_Day2.unity
+    guid: b91b4a4c1951a25409dc55ee645440ba
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 2/MainRoom_Day2_AFTERCOMBAT.unity
+    guid: 3fd1138149d5567439d52549484c4103
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 2/MainRoom_Day2_INITIAL.unity
+    guid: ea75999e92e9ef749b00b984569292be
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 2/WineCellar.unity
+    guid: 89f5ad9db10a16244851f0463b7f01eb
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 3/Bedroom1_Day3_INITIAL.unity
+    guid: 729ed99cfdaf4a848841f4c214551df7
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 3/Bedroom3_Day3.unity
+    guid: 577048e24026f314484a41224994b244
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 3/Bedroom5_Day3.unity
+    guid: 2b8bf151a5498d741b6af04fdbe7b5ef
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 3/MainRoom_Day3_AFTERCOMBAT1.unity
+    guid: c840f5d23a231f540ba64b3bb7f0481c
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 3/MainRoom_Day3_AFTERFINALCOMBAT2.unity
+    guid: 5deb475814d8092478273147c88fcc10
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 3/MainRoom_Day3_INITIAL.unity
+    guid: 5a1d6c5fc0afc27498654101cd071943
+  - enabled: 1
+    path: Assets/Scenes/ActualGameScenes/Day 3/Bedroom1_Day3_AFTERCOMBAT.unity
+    guid: 7234d7a7a4a936649a47343c5e220249
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

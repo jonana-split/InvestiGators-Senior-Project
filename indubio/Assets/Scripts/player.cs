@@ -21,6 +21,10 @@ public class player : MonoBehaviour
 
     Inventory inventory;
     TextMeshProUGUI pressE;
+    TextMeshProUGUI speakToAshlyn;
+    TextMeshProUGUI speakToOlive;
+    TextMeshProUGUI speakToAlison;
+    TextMeshProUGUI lookForClues;
     TextMeshProUGUI doorLockedTxt;
 
     private InvItem currentItem;
@@ -35,6 +39,10 @@ public class player : MonoBehaviour
         var hud = inventoryUI.transform.Find("InventoryOpenBtn").gameObject;
         inventory = GameObject.FindWithTag("Inventory").GetComponent<Inventory>();
         pressE = inventoryUI.transform.Find("PressE").gameObject.GetComponent<TextMeshProUGUI>();
+        speakToAlison = inventoryUI.transform.Find("speakToAlison").gameObject.GetComponent<TextMeshProUGUI>();
+        speakToAshlyn = inventoryUI.transform.Find("speakToAshlyn").gameObject.GetComponent<TextMeshProUGUI>();
+        speakToOlive = inventoryUI.transform.Find("speakToOlive").gameObject.GetComponent<TextMeshProUGUI>();
+        lookForClues = inventoryUI.transform.Find("lookForClues").gameObject.GetComponent<TextMeshProUGUI>();
         doorLockedTxt = inventoryUI.transform.Find("doorlocked").GetComponent<TextMeshProUGUI>();
         if (hud != null)
         {
@@ -124,12 +132,13 @@ public class player : MonoBehaviour
             collectItem = true;
             pressE.gameObject.SetActive(true);
             
-        }else if (collision.gameObject.tag == "NPC")
+        }
+        /*else if (collision.gameObject.tag == "NPC")
         {
             pressE.gameObject.SetActive(true);
-        }
+        }*/
 
-        
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -139,10 +148,12 @@ public class player : MonoBehaviour
             collectItem = false;
             pressE.gameObject.SetActive(false);
         }
+       
+        /*
         else if (collision.gameObject.tag == "NPC")
         {
             pressE.gameObject.SetActive(false);
-        }
+        }*/
 
 
     }
@@ -154,6 +165,22 @@ public class player : MonoBehaviour
             Debug.Log("Door collided");
             doorLockedTxt.gameObject.SetActive(true);
         }
+        else if (collision.gameObject.tag == "ashlynSpeak")
+        {
+            speakToAshlyn.gameObject.SetActive(true);
+        }
+        else if (collision.gameObject.tag == "oliveSpeak")
+        {
+            speakToOlive.gameObject.SetActive(true);
+        }
+        else if (collision.gameObject.tag == "alisonSpeak")
+        {
+            speakToAlison.gameObject.SetActive(true);
+        }
+        else if (collision.gameObject.tag == "lookForClues")
+        {
+            lookForClues.gameObject.SetActive(true);
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -161,6 +188,22 @@ public class player : MonoBehaviour
         if (collision.gameObject.tag == "locked")
         {
             doorLockedTxt.gameObject.SetActive(false);
+        }
+        else if (collision.gameObject.tag == "ashlynSpeak")
+        {
+            speakToAshlyn.gameObject.SetActive(false);
+        }
+        else if (collision.gameObject.tag == "oliveSpeak")
+        {
+            speakToOlive.gameObject.SetActive(false);
+        }
+        else if (collision.gameObject.tag == "alisonSpeak")
+        {
+            speakToAlison.gameObject.SetActive(false);
+        }
+        else if (collision.gameObject.tag == "lookForClues")
+        {
+            lookForClues.gameObject.SetActive(false);
         }
     }
 

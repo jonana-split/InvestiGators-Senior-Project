@@ -19,6 +19,10 @@ TagManager:
   - knife
   - game
   - fitness
+  - ashlynSpeak
+  - alisonSpeak
+  - oliveSpeak
+  - lookForClues
   layers:
   - Default
   - TransparentFX

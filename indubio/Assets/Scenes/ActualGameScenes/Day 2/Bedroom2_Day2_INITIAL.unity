@@ -3800,11 +3800,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 43827599452947492, guid: 61585ea080bc3a44ea95a0d67814704d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.12
+      value: 0.44
       objectReference: {fileID: 0}
     - target: {fileID: 43827599452947492, guid: 61585ea080bc3a44ea95a0d67814704d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.28
+      value: -3.2
       objectReference: {fileID: 0}
     - target: {fileID: 43827599452947492, guid: 61585ea080bc3a44ea95a0d67814704d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3920,7 +3920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262756b8394224648a1fd65c48681db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: MainRoom_Day1
+  targetScene: MainRoom_Day2_INITIAL
   doorNumber: 2
 --- !u!1001 &8227552497708768349
 PrefabInstance:
