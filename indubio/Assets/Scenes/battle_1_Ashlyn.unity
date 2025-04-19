@@ -480,7 +480,7 @@ MonoBehaviour:
   - {fileID: 752458103}
   - {fileID: 938998339}
   - {fileID: 915968977}
-  nextScene: MainRoom
+  nextScene: Bedroom4_Day1_3_AFTER_COMBAT
   waveCounter: {fileID: 1266316601}
   wintext: {fileID: 980808413}
   waveImages:

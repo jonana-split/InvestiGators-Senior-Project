@@ -1,0 +1,5 @@
+[LEVEL=1]
+[NAME=Fern][SPEAKERSPRITE=Fern]...
+[NAME=Fern][SPEAKERSPRITE=Fern]Hi, Ashlyn. I know you’re going through so much right now, but as a private investigator’s apprentice, I feel the need to handle this murder logically. That unfortunately means interviewing you first, since you found the body. Are you okay with that?
+[NAME=Ashlyn][SPEAKERSPRITE=Ashlyn]I-I guess.
+[NAME=Fern][SPEAKERSPRITE=Fern]Thank you.
