@@ -1,0 +1,4 @@
+[LEVEL=1]
+[NAME=Fern][SPEAKERSPRITE=Fern](Hm, this barrel’s lid seems to be put on differently than the others. Let me try opening it…woah, there’s a knife in here??)
+[NAME=Knife][SPEAKERSPRITE=Knife]“A knife found in a barrel in the wine cellar. There seems to be some blood on the blade…”
+[NAME=Fern][SPEAKERSPRITE=Fern](Well that’s concerning… This was definitely a murder then if the knife is hidden all the way in here. I really need to think about all of this tonight…)

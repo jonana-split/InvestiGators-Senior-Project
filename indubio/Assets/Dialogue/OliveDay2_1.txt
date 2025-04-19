@@ -1,0 +1,4 @@
+[LEVEL=1]
+[NAME=Olive][SPEAKERSPRITE=Olive]Hi! How’s everything going?
+[NAME=Fern][SPEAKERSPRITE=Fern]Hey, I need to investigate you next, if you don’t mind.
+[NAME=Olive][SPEAKERSPRITE=Olive]Oh…yeah, of course. You can question me.

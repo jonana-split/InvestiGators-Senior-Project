@@ -1,0 +1,2 @@
+[NAME=Fern][SPEAKERSPRITE=Fern](That’s weird, there seems to be a small hidden shelf in this cabinet. Oh, there’s a key!)
+[NAME=Key][SPEAKERSPRITE=Key]“A key found in a hidden shelf in a kitchen cabinet. It must open something in the house…”

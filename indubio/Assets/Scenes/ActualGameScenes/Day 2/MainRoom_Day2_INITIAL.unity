@@ -10310,6 +10310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sister
       objectReference: {fileID: 0}
+    - target: {fileID: 2009376747200466593, guid: cd64d2ed1ac9d1c4484cab87bcde86cc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3759192148619490815, guid: cd64d2ed1ac9d1c4484cab87bcde86cc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.33

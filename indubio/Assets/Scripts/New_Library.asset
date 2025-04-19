@@ -25,3 +25,9 @@ MonoBehaviour:
     sprite: {fileID: -7246439415143383016, guid: a059095e894213a47bde18a5cf190d8c, type: 3}
   - name: Fitbit
     sprite: {fileID: 5931842347579807508, guid: 520d073d8f6c11c46947a7eaff8d23ce, type: 3}
+  - name: Switch
+    sprite: {fileID: -1229811247994544886, guid: 06f9d36ad186c0a439ce73b170f6d505, type: 3}
+  - name: Key
+    sprite: {fileID: 8078897041468352302, guid: 8c7365ef3f6bc5a44b4b19b0d0aa258f, type: 3}
+  - name: Knife
+    sprite: {fileID: -1603291472181913768, guid: a9601e1fcffee904da8cd23957f37b1b, type: 3}
