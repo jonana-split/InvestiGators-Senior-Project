@@ -3504,7 +3504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25e9d72c34f34de4ba430f5b391cee1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
+  sceneName: MainRoom_Day1
   lastDoorNumber: -1
 --- !u!4 &2049783400
 Transform:
