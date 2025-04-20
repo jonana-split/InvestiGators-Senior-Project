@@ -3151,7 +3151,7 @@ PrefabInstance:
       objectReference: {fileID: 1006126811}
     - target: {fileID: 4005861347797952504, guid: cf5be349965b51b44991588a61b4dc40, type: 3}
       propertyPath: SceneToLoad
-      value: Bedroom3_Day2_START
+      value: Day2
       objectReference: {fileID: 0}
     - target: {fileID: 4005861347797952504, guid: cf5be349965b51b44991588a61b4dc40, type: 3}
       propertyPath: continueImage
