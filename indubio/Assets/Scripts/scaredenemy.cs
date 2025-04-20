@@ -63,6 +63,10 @@ public class scaredenemy : MonoBehaviour
             moveTime = 0;
             shoot();
         }
+        //safeguard for weird bounce angle
+        if(rb.linearVelocity.magnitude < speed &&!freeze) {
+            rb.linearVelocity = moveDir * speed;
+        }
 
     }
     void shoot()
@@ -92,6 +96,7 @@ public class scaredenemy : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("bounce");
         moveDir = Vector2.Reflect(moveDir, collision.GetContact(0).normal);
         rb.linearVelocity = moveDir * speed;
 

@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 1125215216949280250}
   - component: {fileID: 5925692220374136059}
   - component: {fileID: 5198357153961732977}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: scaredenemy
   m_TagString: damages
   m_Icon: {fileID: 0}
@@ -361,7 +361,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.05, y: 0}
+  m_Offset: {x: 0.00015813112, y: 0.0033438802}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -371,5 +371,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.48, y: 1.83}
+  m_Size: {x: 1.767573, y: 1.3685459}
   m_EdgeRadius: 0

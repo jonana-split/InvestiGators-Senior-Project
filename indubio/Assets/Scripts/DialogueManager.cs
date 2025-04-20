@@ -125,7 +125,7 @@ public class DialogueManager : MonoBehaviour
     private void PrintDialogue()
     {
         if (inputStream.Peek().Contains("EndQueue")) // special phrase to stop dialogue
-        { 
+        {
             // Clear Queue
             if (!isTyping)
             {
@@ -137,14 +137,14 @@ public class DialogueManager : MonoBehaviour
                 cancelTyping = true;
             }
         }
-        else if (inputStream.Peek().Contains("[NAME=")) //Set the name of the speaker
+        else if (inputStream.Peek().Contains("[NAME=") && !isTyping) //Set the name of the speaker
         {
             string name = inputStream.Peek();
             name = inputStream.Dequeue().Substring(name.IndexOf('=') + 1, name.IndexOf(']') - (name.IndexOf('=') + 1));
             NameText.text = name;
             PrintDialogue(); // print the rest of this line
         }
-        else if (inputStream.Peek().Contains("[LEVEL=")) //On dialogue finish, go to following level
+        else if (inputStream.Peek().Contains("[LEVEL=") && !isTyping) //On dialogue finish, go to following level
         {
             string part = inputStream.Peek();
             string level = inputStream.Dequeue().Substring(part.IndexOf('=') + 1, part.IndexOf(']') - (part.IndexOf('=') + 1));
@@ -152,7 +152,7 @@ public class DialogueManager : MonoBehaviour
             levelBool = true;
             PrintDialogue(); // print the rest of this line
         }
-        else if (inputStream.Peek().Contains("[SPEAKERSPRITE="))//The sprite of the speaker if you have it
+        else if (inputStream.Peek().Contains("[SPEAKERSPRITE=") && !isTyping)//The sprite of the speaker if you have it
         {
             string part = inputStream.Peek();
             string spriteName = inputStream.Dequeue().Substring(part.IndexOf('=') + 1, part.IndexOf(']') - (part.IndexOf('=') + 1));
@@ -219,7 +219,10 @@ public class DialogueManager : MonoBehaviour
         TextBox.text = "";
         NameText.text = "";
         inputStream.Clear();
-        DialogueUI.SetActive(false);
+        if (DialogueUI != null)
+        {
+            DialogueUI.SetActive(false);
+        }
 
         isInDialouge = false;
         cancelTyping = false;
