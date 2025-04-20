@@ -1,1 +1,1 @@
-[NAME=Fern][SPEAKERSPRITE=Fern](Where did that scream come from?)
+[NAME=Fern][SPEAKERSPRITE=Fern](<i>Where did that scream come from?</i>)

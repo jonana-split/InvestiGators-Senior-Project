@@ -1,2 +1,2 @@
 [NAME=Fern][SPEAKERSPRITE=Fern]I’m sorry this happened, Ashlyn. Unfortunately, this looks like a murder. To be safe, I think everyone should go stay in their rooms for the time being since we potentially have a murderer among us. I’ll help resolve this in the morning.
-[NAME=Fern][SPEAKERSPRITE=Fern](I should go get some sleep as well...)
+[NAME=Fern][SPEAKERSPRITE=Fern](<i>I should go get some sleep as well...</i>)

@@ -1,1 +1,1 @@
-[NAME=Fern][SPEAKERSPRITE=Fern](Maybe I should look around the house for some clues…)
+[NAME=Fern][SPEAKERSPRITE=Fern](<i>Maybe I should look around the house for some clues…</i>)

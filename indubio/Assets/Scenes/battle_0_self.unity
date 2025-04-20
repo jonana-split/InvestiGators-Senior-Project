@@ -481,6 +481,7 @@ MonoBehaviour:
   - {fileID: 1964080662}
   - {fileID: 1309056257}
   - {fileID: 899963055}
+  - {fileID: 1266316599}
   showOnGameOver:
   - {fileID: 752458103}
   - {fileID: 938998339}
@@ -641,7 +642,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1843197933104017171, guid: 0ba8e71cbb5480440b9cc6253218ec2c, type: 3}
-  m_Color: {r: 0, g: 0.022096219, b: 0.33962262, a: 1}
+  m_Color: {r: 0.0627451, g: 0.16862746, b: 0.09411766, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -728,7 +729,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1843197933104017171, guid: 0ba8e71cbb5480440b9cc6253218ec2c, type: 3}
-  m_Color: {r: 0, g: 0.022096219, b: 0.33962262, a: 1}
+  m_Color: {r: 0.062477723, g: 0.16981131, b: 0.09637254, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1741,7 +1742,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1843197933104017171, guid: 0ba8e71cbb5480440b9cc6253218ec2c, type: 3}
-  m_Color: {r: 0, g: 0.022096219, b: 0.33962262, a: 1}
+  m_Color: {r: 0.0627451, g: 0.16862746, b: 0.09411766, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2011,7 +2012,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1843197933104017171, guid: 0ba8e71cbb5480440b9cc6253218ec2c, type: 3}
-  m_Color: {r: 0, g: 0.022096219, b: 0.33962262, a: 1}
+  m_Color: {r: 0.0627451, g: 0.16862746, b: 0.09411766, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2197,8 +2198,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Dialogue
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7e30198af612c7e45b6e27fc88fa8ea9, type: 2}
-  m_sharedMaterial: {fileID: -664134713226018549, guid: 7e30198af612c7e45b6e27fc88fa8ea9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2222,15 +2223,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48
-  m_fontSizeBase: 48
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0

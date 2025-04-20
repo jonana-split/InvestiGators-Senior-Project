@@ -1,1 +1,1 @@
-[NAME=Fern][SPEAKERSPRITE=Fern](I better investigate Olive today, she’s been in a weirdly good mood since all this went down…)
+[NAME=Fern][SPEAKERSPRITE=Fern](<i>I better investigate Olive today, she’s been in a weirdly good mood since all this went down…</i>)
