@@ -1,0 +1,11 @@
+[LEVEL=1]
+[NAME=Fern][SPEAKERSPRITE=Fern]So, you just slept through it? Do you have proof of this?
+[NAME=Allison][SPEAKERSPRITE=Allison]Unfortunately no…
+[NAME=Fern][SPEAKERSPRITE=Fern]Hm, okay. Well, I know this wasn’t a suicide or accident because there was no murder weapon in the room, and I found a bloody knife in the wine cellar…which is very odd since it was locked and the place I found the key was weird.
+[NAME=Allison][SPEAKERSPRITE=Allison]Where’d you find it?
+[NAME=Fern][SPEAKERSPRITE=Fern]In a secret hidden shelf in one of the kitchen cabinets, I found it while looking around the house.
+[NAME=Allison][SPEAKERSPRITE=Allison]Oh wow, that’s interesting.
+[NAME=Fern][SPEAKERSPRITE=Fern]I have one last question for you: I discovered from Ashlyn and Olive that Devin was actually not treating her very well, which I had no idea about. Were you aware of this?
+[NAME=Allison][SPEAKERSPRITE=Allison]...
+[NAME=Allison][SPEAKERSPRITE=Allison]Oh…what? I had no idea, wow.
+[NAME=Fern][SPEAKERSPRITE=Fern](That…was a weird reaction. I need to have a group meeting about my findings.)

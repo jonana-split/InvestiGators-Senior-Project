@@ -1,0 +1,9 @@
+[LEVEL=1]
+[NAME=Ashlyn][SPEAKERSPRITE=Ashlyn]…Wow. This is a lot to take in.
+[NAME=Allison][SPEAKERSPRITE=Allison]I understand, I know you can never forgive me, but please believe me when I say I never wanted to do this. All I wanted was to protect you and it went way too far. I’m so, so sorry…
+[NAME=Ashlyn][SPEAKERSPRITE=Ashlyn]I understand, Alison. T-thank you for trying to protect me. I didn’t know how to get out of that relationship to be honest…I knew he treated me poorly and yet I’d always make excuses for him.
+[NAME=Fern][SPEAKERSPRITE=Fern]Thank you Alison for being honest. I know that’s an extremely hard thing to do, and I’m sorry that happened. I can’t even imagine what I’d do in that scenario.
+[NAME=Fern][SPEAKERSPRITE=Fern]Well, just in time, it seems the storm is clearing up. We can go home now.
+[NAME=Allison][SPEAKERSPRITE=Allison]I-Is something going to happen to me?
+[NAME=Fern][SPEAKERSPRITE=Fern]I’ll need to tell my boss about the situation, especially since this was my first case on my own, but I wouldn’t worry. I understand it was an accident.
+[NAME=Allison][SPEAKERSPRITE=Allison]T-thank you…

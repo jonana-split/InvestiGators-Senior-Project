@@ -1,0 +1,4 @@
+[LEVEL=1]
+[NAME=Allison][SPEAKERSPRITE=Allison]Hi, did you figure out what happened to Devin yet?
+[NAME=Fern][SPEAKERSPRITE=Fern]No, I need to finish my investigations by interviewing you.
+[NAME=Allison][SPEAKERSPRITE=Allison]Oh…yeah, go ahead.
