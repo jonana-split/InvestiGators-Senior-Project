@@ -85,6 +85,7 @@ public class combatplayer : MonoBehaviour
         freeze = true;
         invinCount = 0;
         invin = false;
+        colBox.GetComponent<Collider2D>().enabled = true;
         transparency(norm);
         transform.position = Vector2.zero;
         if (rb != null)

@@ -55,6 +55,7 @@ public class combatmanager : MonoBehaviour
             sp.sprite = waveImages[wave];
 
         }
+        clickPrompt.SetActive(true);
     }
     public void gameOver()
     {
@@ -77,14 +78,19 @@ public class combatmanager : MonoBehaviour
     }
     void Start()
     {
-        
-        
+
+
         //textbox = textboxObj.GetComponent<TextMeshPro>();
+        foreach (GameObject go in showOnGameOver)
+        {
+            go.SetActive(false);
+        }
         player.resetForWave();
         player.manager = this;
         sp = GetComponent<SpriteRenderer>();
         updateWaveTextImage();
-        clickPrompt.SetActive(true);
+
+        
     }
     
     void spawn()
