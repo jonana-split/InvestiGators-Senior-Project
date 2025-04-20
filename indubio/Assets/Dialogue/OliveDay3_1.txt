@@ -1,1 +1,2 @@
-[NAME=Olive][SPEAKERSPRITE=Olive]Hey, I hope things are going well with your investigation. I’m so worried about Ashlyn’s mental state, it seems to be getting worse by the day… I hope some clarity from your findings will help her move on from this.
+[NAME=Olive][SPEAKERSPRITE=Olive]Hey, I hope things are going well with your investigation. I’m so worried about Ashlyn’s mental state, it seems to be getting worse by the day… 
+[NAME=Olive][SPEAKERSPRITE=Olive]I hope some clarity from your findings will help her move on from this.

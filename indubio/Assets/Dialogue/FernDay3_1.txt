@@ -1,1 +1,1 @@
-[NAME=Fern][SPEAKERSPRITE=Fern](<i>I’m down to my last suspect: Alison. Time to solve this mystery today, I hope…</i>)
+[NAME=Fern][SPEAKERSPRITE=Fern](<i>I’m down to my last suspect: Allison. Time to solve this mystery today, I hope…</i>)

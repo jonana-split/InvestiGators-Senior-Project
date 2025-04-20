@@ -3,7 +3,7 @@
 [NAME=Allison][SPEAKERSPRITE=Allison]I understand. I know you can never forgive me, but please believe me when I say I never wanted to do this. All I wanted was to protect you and it went way too far. I’m so, so sorry…
 [NAME=Ashlyn][SPEAKERSPRITE=Ashlyn]I'm going to need some time to process this...
 [NAME=Ashlyn][SPEAKERSPRITE=Ashlyn]Thank you for trying to protect me… I knew he treated me poorly and I’d always make excuses for him... but this all feels so unreal.
-[NAME=Fern][SPEAKERSPRITE=Fern]Thank you Alison for being honest. I know that’s an extremely hard thing to do, and I’m sorry that happened.
+[NAME=Fern][SPEAKERSPRITE=Fern]Thank you Allison for being honest. I know that’s an extremely hard thing to do, and I’m sorry that happened.
 [NAME=Fern][SPEAKERSPRITE=Fern]Well, just in time, it seems the storm is clearing up. We can finally go home.
 [NAME=Allison][SPEAKERSPRITE=Allison]I-Is something going to happen to me?
 [NAME=Fern][SPEAKERSPRITE=Fern]I’ll need to tell my boss about the situation, especially since this was my first case on my own.

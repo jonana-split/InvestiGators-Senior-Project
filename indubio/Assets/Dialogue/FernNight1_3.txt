@@ -1,2 +1,3 @@
 [LEVEL=1]
-[NAME=Fern][SPEAKERSPRITE=Fern]<i>*inhales*, *exhales*.</i> (<i>Everything’s gonna be okay.</i>)
+[NAME=Fern][SPEAKERSPRITE=Fern]<i>*inhales*, *exhales*.</i>
+[NAME=Fern][SPEAKERSPRITE=Fern](<i>Everything’s gonna be okay.</i>)
