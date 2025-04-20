@@ -22,6 +22,8 @@ public class combatmanager : MonoBehaviour
     public GameObject[] showOnGameOver;
     public string nextScene;
     public TextMeshProUGUI waveCounter;
+    public TextMeshProUGUI combatName;
+    public string[] names;
     public GameObject wintext;
     public Sprite[] waveImages;
     SpriteRenderer sp;
@@ -34,11 +36,19 @@ public class combatmanager : MonoBehaviour
         }
         if (wave < numbersInWaves.Length) //needs to be 1 more than the rest of the arrays bcs of closing dialog
         {
+            if(combatName != null)
+            {
+                combatName.text = names[wave];
+            }
             textbox.text = waveDialog[wave];
             sp.sprite = waveImages[wave];
         }
         else if (wave == numbersInWaves.Length)
         {
+            if (combatName != null)
+            {
+                combatName.text = names[wave];
+            }
             textbox.text = waveDialog[wave];
             waveCounter.enabled = false;
             wintext.SetActive(true);
