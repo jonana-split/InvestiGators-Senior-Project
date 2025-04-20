@@ -23,6 +23,9 @@ TagManager:
   - alisonSpeak
   - oliveSpeak
   - lookForClues
+  - npcTracker
+  - Door4
+  - cellarlocked
   layers:
   - Default
   - TransparentFX

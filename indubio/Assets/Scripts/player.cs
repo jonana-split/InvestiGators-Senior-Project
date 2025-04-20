@@ -3,6 +3,9 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
 using TMPro;
+using System.Collections.Generic;
+using UnityEditor.SearchService;
+using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
@@ -30,8 +33,44 @@ public class player : MonoBehaviour
     private InvItem currentItem;
     private bool collectItem = false;
 
+    public int npcVisit = 3;
+    public static bool threeNPCs = false;
+    public bool isDay1 = false;
+
+    public GameObject currDoor;
+
+    public GameObject npcTracker;
+
     void Start()
     {
+
+        npcTracker = GameObject.FindWithTag("npcTracker");
+
+        if (SceneManager.GetActiveScene().name == "MainRoom_Day1_MONOLOGUE")
+        {
+            if (isDay1)
+            {
+                isDay1 = false;
+                threeNPCs = false;
+            }
+
+            Debug.Log("mainroom");
+
+            Destroy(npcTracker);
+            
+            currDoor = GameObject.FindWithTag("Door4");
+
+            if (currDoor != null)
+            {
+                Door door = currDoor.GetComponent<Door>();
+
+                if (door)
+                {
+                    door.targetScene = "Bedroom4_Day1_2_BEFORE_COMBAT";
+                }
+            }
+        }
+
         box = GetComponent<BoxCollider2D>();
         move = InputSystem.actions.FindAction("Move");
         rb = GetComponent<Rigidbody2D>();
@@ -44,11 +83,13 @@ public class player : MonoBehaviour
         speakToOlive = inventoryUI.transform.Find("speakToOlive").gameObject.GetComponent<TextMeshProUGUI>();
         lookForClues = inventoryUI.transform.Find("lookForClues").gameObject.GetComponent<TextMeshProUGUI>();
         doorLockedTxt = inventoryUI.transform.Find("doorlocked").GetComponent<TextMeshProUGUI>();
+        
         if (hud != null)
         {
             hud.SetActive(true);
             //Debug.Log("EOJefbouef");
-        }else
+        }
+        else
         {
             //Debug.Log("dsffdfe");
         }
@@ -86,7 +127,33 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moveDelta = move.ReadValue<Vector2>();
+
+        if (SceneManager.GetActiveScene().name == "Bedroom4_Day1_1_INITIAL")
+        {
+            currDoor = GameObject.FindWithTag("Door");
+
+            if (threeNPCs == true)
+            {
+                if (currDoor != null)
+                {
+                    Door door = currDoor.GetComponent<Door>();
+
+                    if (door && isDay1)
+                    {
+                        door.targetScene = "MainRoom_Day1_MONOLOGUE";
+                        isDay1 = false;
+                    }
+                }
+
+            }
+        }
+
+        if (Inventory.keyCol)
+        {
+
+        }
+
+            moveDelta = move.ReadValue<Vector2>();
         //Debug.Log(moveDelta);
 
         horizontal = moveDelta.x;
@@ -119,7 +186,7 @@ public class player : MonoBehaviour
         {
             inventory.AddItem(currentItem);
         }
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -130,9 +197,40 @@ public class player : MonoBehaviour
             Debug.Log("Adding item");
             currentItem = item;
             collectItem = true;
-            pressE.gameObject.SetActive(true);
-            
+
+            /*
+             * we don't really need the press E anymore
+             * 
+             * if (GameObject.FindWithTag("key"))
+            {
+                pressE.gameObject.SetActive(true);
+            }
+            else if (GameObject.FindWithTag("knife"))
+            {
+                pressE.gameObject.SetActive(true);
+            }
+            */
+
         }
+
+        if (collision.CompareTag("NPC"))
+        {
+            string npcName = collision.gameObject.name;
+
+            if (!threeNPC_Tracker.allNpcNames.Contains(npcName))
+            {
+                threeNPC_Tracker.allNpcNames.Add(npcName);
+
+                Debug.Log("NPC Count: " + threeNPC_Tracker.allNpcNames.Count);
+                Debug.Log("NPC Name: " + npcName);
+            }
+        }
+
+        if (threeNPC_Tracker.allNpcNames.Count == 3 && isDay1)
+        {
+            threeNPCs = true;
+        }
+
         /*else if (collision.gameObject.tag == "NPC")
         {
             pressE.gameObject.SetActive(true);
@@ -143,12 +241,12 @@ public class player : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.GetComponent<InvItem>() != null)
+        if (collision.GetComponent<InvItem>() != null)
         {
             collectItem = false;
             pressE.gameObject.SetActive(false);
         }
-       
+
         /*
         else if (collision.gameObject.tag == "NPC")
         {
@@ -163,6 +261,9 @@ public class player : MonoBehaviour
         if (collision.gameObject.tag == "locked")
         {
             Debug.Log("Door collided");
+            doorLockedTxt.gameObject.SetActive(true);
+        }else if (collision.gameObject.tag == "cellarlocked" && !Inventory.keyCol)
+        {
             doorLockedTxt.gameObject.SetActive(true);
         }
         else if (collision.gameObject.tag == "ashlynSpeak")
@@ -181,11 +282,20 @@ public class player : MonoBehaviour
         {
             lookForClues.gameObject.SetActive(true);
         }
+
+        if (Inventory.keyCol && collision.gameObject.tag == "cellarlocked")
+        {
+            collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "locked")
+        {
+            doorLockedTxt.gameObject.SetActive(false);
+        }
+        else if (collision.gameObject.tag == "cellarlocked" && !Inventory.keyCol)
         {
             doorLockedTxt.gameObject.SetActive(false);
         }

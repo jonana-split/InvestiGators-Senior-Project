@@ -1812,7 +1812,7 @@ GameObject:
   - component: {fileID: 476785683}
   m_Layer: 0
   m_Name: CellarDoor
-  m_TagString: locked
+  m_TagString: cellarlocked
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -2251,7 +2251,7 @@ GameObject:
   - component: {fileID: 1018096614}
   m_Layer: 0
   m_Name: OliveNPC
-  m_TagString: NPC
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2770,7 +2770,7 @@ GameObject:
   - component: {fileID: 1360347575}
   m_Layer: 0
   m_Name: AllisonNPC
-  m_TagString: NPC
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2988,7 +2988,7 @@ GameObject:
   - component: {fileID: 1429620814}
   m_Layer: 6
   m_Name: AshlynNPC
-  m_TagString: NPC
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

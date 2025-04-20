@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262756b8394224648a1fd65c48681db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: Bedroom3_Day1
+  targetScene: Bedroom3_Day1_START
   doorNumber: 3
 --- !u!61 &21713901
 BoxCollider2D:
@@ -1103,7 +1103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262756b8394224648a1fd65c48681db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: Bedroom4_Day1
+  targetScene: Bedroom4_Day1_1_INITIAL
   doorNumber: 4
 --- !u!1 &240615140
 GameObject:

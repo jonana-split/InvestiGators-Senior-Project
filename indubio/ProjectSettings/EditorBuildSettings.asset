@@ -123,7 +123,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ActualGameScenes/Day 2/MainRoom_Day2_INITIAL.unity
     guid: ea75999e92e9ef749b00b984569292be
   - enabled: 1
-    path: Assets/Scenes/ActualGameScenes/Day 2/WineCellar.unity
+    path: Assets/Scenes/ActualGameScenes/Day 2/WineCellar_Day2.unity
     guid: 89f5ad9db10a16244851f0463b7f01eb
   - enabled: 1
     path: Assets/Scenes/ActualGameScenes/Day 3/Bedroom1_Day3_INITIAL.unity

@@ -4106,6 +4106,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ashlyn
       objectReference: {fileID: 0}
+    - target: {fileID: 901856426035213029, guid: 73fdf9a94b72c9c4591772860fee76e9, type: 3}
+      propertyPath: m_TagString
+      value: NPC
+      objectReference: {fileID: 0}
     - target: {fileID: 6339203172105477253, guid: 73fdf9a94b72c9c4591772860fee76e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.08
