@@ -16,12 +16,12 @@ public class hurtbox : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("TEST2");
+        //Debug.Log("TEST2");
         transform.parent.gameObject.SendMessage("hurtboxHit", collision);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("TEST");
+        //Debug.Log("TEST");
         transform.parent.gameObject.SendMessage("hurtboxHit", collision.collider);
 
     }

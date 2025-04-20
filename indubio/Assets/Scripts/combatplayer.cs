@@ -74,6 +74,10 @@ public class combatplayer : MonoBehaviour
         GetComponent<SpriteRenderer>().material.color = c;
     }
     // Update is called once per frame
+    public void unfreeze()
+    {
+        freeze = false;
+    }
     public void resetForWave()
     {
         if (animator != null)
@@ -155,12 +159,6 @@ public class combatplayer : MonoBehaviour
     }
     public void OnShoot(InputAction.CallbackContext ctx)
     {
-        if (freeze && ctx.performed == true)
-        {
-            freeze = false;
-            manager.spawnWave();
-            return;
-        }
         if (ctx.performed == true && shootCount>=shootCool && aimdir!=Vector2.zero)
         {
             shootCount = 0;

@@ -55,7 +55,13 @@ public class combatmanager : MonoBehaviour
             sp.sprite = waveImages[wave];
 
         }
+        Debug.Log("clickprompt");
         clickPrompt.SetActive(true);
+    }
+    public void Cont()
+    {
+        player.unfreeze();
+        spawnWave();
     }
     public void gameOver()
     {
@@ -85,6 +91,7 @@ public class combatmanager : MonoBehaviour
         {
             go.SetActive(false);
         }
+        Debug.Log("Hiding");
         player.resetForWave();
         player.manager = this;
         sp = GetComponent<SpriteRenderer>();
@@ -134,7 +141,7 @@ public class combatmanager : MonoBehaviour
             {
                 Destroy(b);
             }
-            clickPrompt.SetActive(true);
+            //clickPrompt.SetActive(true);
             player.resetForWave();
             WaveSpawned = true;
 

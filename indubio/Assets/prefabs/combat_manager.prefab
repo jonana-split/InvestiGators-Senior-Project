@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10, y: 0.75, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 128, y: 128, z: 128}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -106,30 +106,26 @@ MonoBehaviour:
   - {fileID: 6452644963227566216, guid: 1940802ea3e3dd941b5683285b59c266, type: 3}
   - {fileID: 6452644963227566216, guid: 93c19dbae1b37bb43805c348bebbc21a, type: 3}
   WavePositions:
-  - {x: 2.5, y: 5}
-  - {x: 2.5, y: -5}
-  - {x: -2.5, y: 5}
-  - {x: 2.5, y: 5}
-  - {x: 3, y: 5}
-  - {x: -3, y: 5}
-  enemiesInWave: 020000000300000001000000010000000000000000000000
-  numbersInWaves: 01000000010000000200000002000000
+  - {x: 0, y: 6}
+  - {x: 0, y: -6}
+  - {x: -3, y: 6}
+  - {x: 3, y: 6}
+  - {x: -3, y: -6}
+  - {x: 3, y: 6}
+  enemiesInWave: 000000000200000001000000000000000200000003000000
+  numbersInWaves: 020000000200000002000000
   textbox: {fileID: 0}
   waveDialog:
-  - "Fear: I-I can\u2019t believe this fun weekend has turned into a murder mystery.
-    I\u2019ve never solved a huge case on my own before, what do I do??"
-  - "Anger: If one of my friends is a murderer, I can never forgive them. That\u2019s
-    the cruelest act someone could commit in this world. I can\u2019t believe I trusted
-    them for so long. "
-  - "Anxiety: How am I going to solve this case without my boss? I\u2019m not ready
-    for this responsibility yet, it\u2019s too soon. I don\u2019t know enough yet,
-    I\u2019m not good enough.  Oh god, what if they murder me next? If they could
-    do that to one of their friends, they could definitely do that to me as well.
-    Oh no\u2026  "
-  - "Sadness: Wow, I can\u2019t believe I just lost one of my friends. Not only that,
-    I lost a friend today in whoever murdered Devin. Losing two friends at once was
-    not in the cards for me. How am I going to recover from this\u2026  "
-  - "Fern: *inhales*, *exhales*. (Everything\u2019s gonna be okay.) "
+  - "I just still can\u2019t believe he\u2019s dead\u2026it\u2019s all so sudden.
+    How am I going to move on without him?"
+  - "You know what, I\u2019d actually like to help you out with this investigation,
+    I am a journalism major after all so maybe I can be of some help to you. Maybe
+    it will help get my mind off all this sadness, yeah\u2026 "
+  - "I-I really hope someone here didn\u2019t murder him. You all are my closest
+    friends, w-why would anyone do this to him? It must\u2019ve been an accident
+    or something\u2026right? "
+  - Thank you for letting me vent some of my emotions out, I know it can be a lot
+    to take in so I appreciate it.
   player: {fileID: 0}
   clickPrompt: {fileID: 0}
   hideOnGameOver:
@@ -142,12 +138,13 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  nextScene: Bedroom3_FirstNightAfter
+  nextScene: Bedroom4_Day1_3_AFTER_COMBAT
   waveCounter: {fileID: 0}
+  combatName: {fileID: 0}
+  names: []
   wintext: {fileID: 0}
   waveImages:
-  - {fileID: 6108434414929538555, guid: fe0716a78c3633844b3965baf1f5ce9e, type: 3}
-  - {fileID: 1597317194208157057, guid: 3d94e2e547e433346805cc990ad8e7c8, type: 3}
-  - {fileID: 7158942930760888583, guid: 8a72d02101e430a40b3fd9fbe1a3c0cc, type: 3}
-  - {fileID: 5612855306789754151, guid: 20cbd59ebdec159458e487c778704a9c, type: 3}
-  - {fileID: -5115618752126089108, guid: 30a085f9daa89814683f53b5493f2ce9, type: 3}
+  - {fileID: -8674440291992414907, guid: 3bb370f382f17c44aae14b0c97c220f0, type: 3}
+  - {fileID: -8674440291992414907, guid: 3bb370f382f17c44aae14b0c97c220f0, type: 3}
+  - {fileID: -8674440291992414907, guid: 3bb370f382f17c44aae14b0c97c220f0, type: 3}
+  - {fileID: -8674440291992414907, guid: 3bb370f382f17c44aae14b0c97c220f0, type: 3}
