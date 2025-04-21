@@ -75,7 +75,8 @@ public class DialogueManager : MonoBehaviour
     public List<string> speakerSpriteNames;
     player ourplayer;
 
-
+    [SerializeField] private Image fadeOverlay;
+    [SerializeField] private float fadeDuration = 1.0f;
 
     [Header("Options")]
     public bool freezePlayerOnDialogue = true;
@@ -243,12 +244,40 @@ public class DialogueManager : MonoBehaviour
         if (levelBool)
         {
             //GameObject.FindObjectOfType<GameSceneManager>().LoadScene(levelIndex);
-            SceneManager.LoadScene(SceneToLoad);
+            //SceneManager.LoadScene(SceneToLoad);
+            StartCoroutine(FadeOutAndLoadScene());
         }
         if (currentTrigger.singleUseDialogue)
         {
             currentTrigger.hasBeenUsed = true;
         }
         inputStream.Clear();
+    }
+
+    private IEnumerator FadeOutAndLoadScene()
+    {
+        Color color = fadeOverlay.color;
+        float time = 0f;
+
+        fadeOverlay.gameObject.SetActive(true);
+
+        while (time < fadeDuration)
+        {
+            time += Time.deltaTime;
+            color.a = Mathf.Lerp(0f, 1f, time / fadeDuration);
+            fadeOverlay.color = color;
+            yield return null;
+        }
+
+        // Ensure it's fully opaque
+        color.a = 1f;
+        fadeOverlay.color = color;
+
+        LoadScene();
+    }
+
+    private void LoadScene()
+    {
+        SceneManager.LoadScene(SceneToLoad);
     }
 }

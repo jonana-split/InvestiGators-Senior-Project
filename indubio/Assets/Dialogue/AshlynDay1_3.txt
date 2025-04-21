@@ -6,7 +6,7 @@
 [NAME=Fern][SPEAKERSPRITE=Fern](<i>Interesting, I had no idea Devin wasn’t treating her well…</i>)
 [NAME=Fern][SPEAKERSPRITE=Fern]So what were you doing at 2am last night? How did you find him?
 [NAME=Ashlyn][SPEAKERSPRITE=Ashlyn]I was asleep like any other normal person would be at that time. Here, you can check my Fitness Tracker’s sleep tracker at that time.
-[NAME=Fitness Tracker][SPEAKERSPRITE=Fitness Tracker]“Ashlyn’s fitness tracker that she provided as evidence. It seems to prove she was asleep during the murder due to its sleep tracking feature.”
+[NAME=FitLog][SPEAKERSPRITE=FitLog]“Ashlyn’s fitness tracker that she provided as evidence. It seems to prove she was asleep during the murder due to its sleep tracking feature.”
 [NAME=Fern][SPEAKERSPRITE=Fern](<i>Hm, yeah the time matches up. She woke up at 2:38, and the scream was at 2:41. That’s not enough time for her to commit a murder and hide the murder weapon.</i>)
 [NAME=Ashlyn][SPEAKERSPRITE=Ashlyn]We had a little tiff yesterday evening and I wanted to go in his room to cuddle with him since I felt pretty bad about it. That’s when I walked in on him…
 [NAME=Fern][SPEAKERSPRITE=Fern]I understand. Thank you for providing this evidence, it’s very helpful.

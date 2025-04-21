@@ -1,5 +1,5 @@
 [NAME=Olive][SPEAKERSPRITE=Olive]I know this looks bad, but I can prove I wasn’t the murderer. I actually was playing video games all night… 
 [NAME=Olive][SPEAKERSPRITE=Olive]Here, you can look at the time I was playing on it, which should match up with the time the murder happened.
-[NAME=Game Console][SPEAKERSPRITE=Game Console]“Olive’s portable gaming console that she provided as evidence. It has time logs that seem to prove she was playing games during the murder.”
+[NAME=Console][SPEAKERSPRITE=Console]“Olive’s portable gaming console that she provided as evidence. It has time logs that seem to prove she was playing games during the murder.”
 [NAME=Fern][SPEAKERSPRITE=Fern](<i>The time log does show her playing a game when the murder would’ve happened, I guess she’s not the murderer. But I should still keep an eye on her…</i>)
 [NAME=Fern][SPEAKERSPRITE=Fern]Thank you for the information and this evidence, it should help me out with solving this case.
