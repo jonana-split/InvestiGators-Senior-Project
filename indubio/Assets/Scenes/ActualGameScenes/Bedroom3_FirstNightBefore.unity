@@ -3902,7 +3902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25e9d72c34f34de4ba430f5b391cee1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: FirstNight_MainRoom
+  sceneName: FirstNight_MainRoom_2
   lastDoorNumber: -1
 --- !u!4 &2049783400
 Transform:
@@ -4330,7 +4330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262756b8394224648a1fd65c48681db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: FirstNight_MainRoom
+  targetScene: FirstNight_MainRoom_2
   doorNumber: 3
   fadeOverlay: {fileID: 1668804897}
   fadeDuration: 1
