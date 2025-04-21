@@ -2367,7 +2367,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextFileAsset: {fileID: 4900000, guid: f89d8d11405c60341b515a3791e77aaf, type: 3}
   TextFileAsset2: {fileID: 4900000, guid: f89d8d11405c60341b515a3791e77aaf, type: 3}
-  canSkip: 0
   singleUseDialogue: 0
   hasBeenUsed: 0
 --- !u!1 &685198516
@@ -2733,6 +2732,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &805303759
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2607371164350122018, guid: 789b5bfac6ecbba44bc210e7c73de963, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.4335344
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607371164350122018, guid: 789b5bfac6ecbba44bc210e7c73de963, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607371164350122018, guid: 789b5bfac6ecbba44bc210e7c73de963, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607371164350122018, guid: 789b5bfac6ecbba44bc210e7c73de963, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607371164350122018, guid: 789b5bfac6ecbba44bc210e7c73de963, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607371164350122018, guid: 789b5bfac6ecbba44bc210e7c73de963, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607371164350122018, guid: 789b5bfac6ecbba44bc210e7c73de963, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607371164350122018, guid: 789b5bfac6ecbba44bc210e7c73de963, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607371164350122018, guid: 789b5bfac6ecbba44bc210e7c73de963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607371164350122018, guid: 789b5bfac6ecbba44bc210e7c73de963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607371164350122018, guid: 789b5bfac6ecbba44bc210e7c73de963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217155575547989465, guid: 789b5bfac6ecbba44bc210e7c73de963, type: 3}
+      propertyPath: m_Name
+      value: Rain
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 789b5bfac6ecbba44bc210e7c73de963, type: 3}
 --- !u!1 &839707667
 GameObject:
   m_ObjectHideFlags: 0
@@ -9307,7 +9367,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextFileAsset: {fileID: 4900000, guid: c4017546993c83c4ba6377dbc6ebe0c8, type: 3}
   TextFileAsset2: {fileID: 4900000, guid: c4017546993c83c4ba6377dbc6ebe0c8, type: 3}
-  canSkip: 1
   singleUseDialogue: 0
   hasBeenUsed: 0
 --- !u!61 &1669029979
@@ -10851,3 +10910,4 @@ SceneRoots:
   - {fileID: 367964975}
   - {fileID: 1015252381}
   - {fileID: 1253546736}
+  - {fileID: 805303759}
