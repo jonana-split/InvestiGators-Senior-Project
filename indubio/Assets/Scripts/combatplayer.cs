@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.VisualScripting;
 //using UnityEditor.Rendering;
 using UnityEngine;
@@ -35,6 +36,10 @@ public class combatplayer : MonoBehaviour
     bool isWalking = false;
     Color norm =new Color(1.0f, 1.0f, 1.0f, 1.0f);
     Color ouch = new Color(1.0f, .5f, .5f, .5f);
+    GameObject hudA;
+    GameObject hud;
+    CollapseInventory invManager;
+    slotImg slot2;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -62,8 +67,27 @@ public class combatplayer : MonoBehaviour
         Vector3 screenMin2 = cam.WorldToScreenPoint(min);
         Vector3 screenMax2 = cam.WorldToScreenPoint(max);
         playerSize = screenMax2- screenMin2;
-        var hud = GameObject.FindWithTag("HUDDontDestroy").transform.Find("InventoryOpenBtn").gameObject;
-
+        hudA = GameObject.FindWithTag("HUDDontDestroy");
+        hud = hudA.transform.Find("InventoryOpenBtn").gameObject;
+        invManager = hudA.transform.Find("InventoryManager").gameObject.GetComponent<CollapseInventory>();
+        if (invManager != null)
+        {
+            invManager.CloseInventory();
+        }
+        var slot1 = hud.transform.Find("Inventory");
+        slot2 = null;
+        if (slot1 != null)
+        {
+            slot1 = transform.Find("Slot");
+        }
+        if (slot1 != null)
+        {
+            slot2 = transform.Find("Border1").gameObject.GetComponent<slotImg>();
+        }
+        if (slot2 != null)
+        {
+            slot2.ClosePopup();
+        }
         var music = GameObject.FindWithTag("bgMusic");
         
 

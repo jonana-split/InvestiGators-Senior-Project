@@ -7,6 +7,7 @@ using System.Collections.Generic;
 //using UnityEditor.SearchService;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
+using Unity.Mathematics;
 
 public class player : MonoBehaviour
 {
@@ -41,7 +42,9 @@ public class player : MonoBehaviour
     public GameObject currDoor;
     bool frozen = false;
     public GameObject npcTracker;
-
+    CollapseInventory invManager;
+    slotImg slot2;
+    JournalManager journalManager;
     void Start()
     {
         var music = GameObject.FindWithTag("music");
@@ -100,8 +103,19 @@ public class player : MonoBehaviour
         speakToOlive = inventoryUI.transform.Find("speakToOlive").gameObject.GetComponent<TextMeshProUGUI>();
         lookForClues = inventoryUI.transform.Find("lookForClues").gameObject.GetComponent<TextMeshProUGUI>();
         doorLockedTxt = inventoryUI.transform.Find("doorlocked").GetComponent<TextMeshProUGUI>();
+        invManager = inventoryUI.transform.Find("InventoryManager").gameObject.GetComponent<CollapseInventory>();
+        journalManager = GameObject.Find("JournalManager").GetComponent<JournalManager>();
+        var slot1 = hud.transform.Find("Inventory");
+        slot2 = null;
+        if (slot1 != null)
+        {
+            slot1 = transform.Find("Slot");
+        }
+        if (slot1 != null)
+        {
+            slot2 = transform.Find("Border1").gameObject.GetComponent<slotImg>();
 
-
+        }
         if (hud != null)
         {
             hud.SetActive(true);
@@ -143,6 +157,22 @@ public class player : MonoBehaviour
     }
     public void freeze()
     {
+        
+        if (slot2 != null)
+        {
+            slot2.ClosePopup();
+        }
+        if (invManager != null)
+        {
+            invManager.CloseInventory();
+            invManager.enabled=false;
+        }
+    
+        if (journalManager != null)
+        {
+            //journalManager.CloseJournal();
+            journalManager.enabled=false;
+        }
         frozen = true;
         rb.linearVelocity=Vector2.zero;
         animator.SetBool("walking", false);
@@ -150,6 +180,14 @@ public class player : MonoBehaviour
     public void unfreeze()
     {
         frozen = false;
+        if (invManager != null)
+        {
+            invManager.enabled = true;
+        }
+        if (journalManager != null)
+        {
+            journalManager.enabled = true;
+        }
     }
     // Update is called once per frame
     void Update()

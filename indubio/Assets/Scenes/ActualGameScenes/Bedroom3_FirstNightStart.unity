@@ -1119,7 +1119,7 @@ GameObject:
   - component: {fileID: 453758472}
   m_Layer: 0
   m_Name: JournalManager
-  m_TagString: Untagged
+  m_TagString: journal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1145,6 +1145,7 @@ MonoBehaviour:
   pageNumText: {fileID: 1507439643}
   prevButton: {fileID: 1507439642}
   nextButton: {fileID: 1507439640}
+  enabled: 1
 --- !u!4 &453758473
 Transform:
   m_ObjectHideFlags: 0
@@ -2310,16 +2311,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 0, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 27
-      m_TileSpriteIndex: 27
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 26
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 1, y: 0, z: 0}
     second:
       serializedVersion: 2
@@ -2706,7 +2697,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 64c0e17bad0cd42448b07a6d93569433, type: 2}
   - m_RefCount: 30
     m_Data: {fileID: 11400000, guid: 14a768c038d9dd848a2ec65171a48cf7, type: 2}
-  - m_RefCount: 5
+  - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 982fd25f9a99d7948ae678f92d6ae789, type: 2}
   - m_RefCount: 8
     m_Data: {fileID: 11400000, guid: 4132afb3ab659c4448a36c842f8676c0, type: 2}
@@ -2787,7 +2778,7 @@ Tilemap:
     m_Data: {fileID: -2130922157, guid: 8583934698cb1f4489400e1cb739a250, type: 3}
   - m_RefCount: 30
     m_Data: {fileID: 1567034700, guid: 8583934698cb1f4489400e1cb739a250, type: 3}
-  - m_RefCount: 5
+  - m_RefCount: 4
     m_Data: {fileID: -675579301, guid: 8583934698cb1f4489400e1cb739a250, type: 3}
   - m_RefCount: 8
     m_Data: {fileID: -833206756, guid: 8583934698cb1f4489400e1cb739a250, type: 3}
@@ -2814,7 +2805,7 @@ Tilemap:
   - m_RefCount: 3
     m_Data: {fileID: 1381309856, guid: 8583934698cb1f4489400e1cb739a250, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 94
+  - m_RefCount: 93
     m_Data:
       e00: 1
       e01: 0
@@ -2885,7 +2876,7 @@ Tilemap:
     m_Data: {r: 1.5191504e-28, g: 1.5191504e-28, b: 1.5191504e-28, a: 1.5191504e-28}
   - m_RefCount: 0
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
-  - m_RefCount: 94
+  - m_RefCount: 93
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -3757,6 +3748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JournalOpenBtn
       objectReference: {fileID: 0}
+    - target: {fileID: 7123869420131839918, guid: cf6b4d5dd563c6c429801dd49d4492cd, type: 3}
+      propertyPath: m_TagString
+      value: journal
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4154,6 +4149,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 806013765941257324, guid: 85cca0adf2454d244af135e93a3ddb93, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2237528006063132797, guid: 85cca0adf2454d244af135e93a3ddb93, type: 3}
       propertyPath: m_TagString
       value: Inventory

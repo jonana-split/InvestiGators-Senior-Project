@@ -2,10 +2,10 @@ using UnityEngine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-
 public class CollapseInventory : MonoBehaviour
 {
     public GameObject inventory;
+    public bool enabled = true;
 
 
     public void Start()
@@ -18,6 +18,10 @@ public class CollapseInventory : MonoBehaviour
 
     public void OpenInventory()
     {
+        if(!enabled)
+        {
+            return;
+        }
         CanvasGroup inv = inventory.GetComponent<CanvasGroup>();
 
         inv.alpha = 1f;
@@ -28,6 +32,10 @@ public class CollapseInventory : MonoBehaviour
 
     public void CloseInventory()
     {
+        if (!enabled)
+        {
+            return;
+        }
         CanvasGroup inv = inventory.GetComponent<CanvasGroup>();
         inv.alpha = 0f;
         inv.interactable = false;

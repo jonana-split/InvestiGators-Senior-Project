@@ -13,7 +13,7 @@ public class JournalManager : MonoBehaviour
     public TextMeshProUGUI pageNumText;
     public GameObject prevButton;
     public GameObject nextButton;
-
+    public bool enabled = true;
     private int pageNum;
 
     void Start()
@@ -47,6 +47,7 @@ public class JournalManager : MonoBehaviour
     }
     public void OpenJournal()
     {
+        if (!enabled) { return; }
         journalPanel.SetActive(true);
         journalButton.SetActive(false);
         backgroundPanel.SetActive(true);
@@ -55,6 +56,7 @@ public class JournalManager : MonoBehaviour
 
     public void CloseJournal()
     {
+        if (!enabled) { return; }
         journalPanel.SetActive(false);
         journalButton.SetActive(true);
         backgroundPanel.SetActive(false);

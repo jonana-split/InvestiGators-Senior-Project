@@ -30,6 +30,7 @@ TagManager:
   - music
   - invOpen
   - invInfo
+  - journal
   layers:
   - Default
   - TransparentFX
