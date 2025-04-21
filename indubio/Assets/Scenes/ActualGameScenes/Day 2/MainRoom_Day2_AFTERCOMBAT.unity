@@ -1778,7 +1778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetScene: WineCellar_Day2
   doorNumber: 6
-  fadeOverlay: {fileID: 0}
+  fadeOverlay: {fileID: 1253546737}
   fadeDuration: 1
 --- !u!61 &476785684
 BoxCollider2D:
@@ -2367,6 +2367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextFileAsset: {fileID: 4900000, guid: f89d8d11405c60341b515a3791e77aaf, type: 3}
   TextFileAsset2: {fileID: 4900000, guid: f89d8d11405c60341b515a3791e77aaf, type: 3}
+  canSkip: 0
   singleUseDialogue: 0
   hasBeenUsed: 0
 --- !u!1 &685198516
@@ -9306,6 +9307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextFileAsset: {fileID: 4900000, guid: c4017546993c83c4ba6377dbc6ebe0c8, type: 3}
   TextFileAsset2: {fileID: 4900000, guid: c4017546993c83c4ba6377dbc6ebe0c8, type: 3}
+  canSkip: 1
   singleUseDialogue: 0
   hasBeenUsed: 0
 --- !u!61 &1669029979
