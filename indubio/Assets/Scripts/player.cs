@@ -6,6 +6,7 @@ using TMPro;
 using System.Collections.Generic;
 using UnityEditor.SearchService;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class player : MonoBehaviour
 {
@@ -43,6 +44,22 @@ public class player : MonoBehaviour
 
     void Start()
     {
+        var music = GameObject.FindWithTag("music");
+        if (music != null)
+        {
+            Transform bgMusic = music.transform.Find("BackgroundMusic");
+            
+            if(bgMusic != null)
+            {
+                Debug.Log("found music");
+                bgMusic.gameObject.SetActive(true);
+            }
+            
+        }
+        else
+        {
+            Debug.LogWarning("No bgMusic");
+        }
 
         npcTracker = GameObject.FindWithTag("npcTracker");
 
@@ -83,7 +100,8 @@ public class player : MonoBehaviour
         speakToOlive = inventoryUI.transform.Find("speakToOlive").gameObject.GetComponent<TextMeshProUGUI>();
         lookForClues = inventoryUI.transform.Find("lookForClues").gameObject.GetComponent<TextMeshProUGUI>();
         doorLockedTxt = inventoryUI.transform.Find("doorlocked").GetComponent<TextMeshProUGUI>();
-        
+
+
         if (hud != null)
         {
             hud.SetActive(true);
@@ -128,7 +146,7 @@ public class player : MonoBehaviour
     void Update()
     {
 
-        if (SceneManager.GetActiveScene().name == "Bedroom4_Day1_1_INITIAL")
+        if (SceneManager.GetActiveScene().name == "Bedroom4_Day1_1_INITIAL" || SceneManager.GetActiveScene().name == "Bedroom2_Day1" || SceneManager.GetActiveScene().name == "Bedroom1_Day1")
         {
             currDoor = GameObject.FindWithTag("Door");
 

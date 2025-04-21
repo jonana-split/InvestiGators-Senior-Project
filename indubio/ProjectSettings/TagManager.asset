@@ -26,6 +26,8 @@ TagManager:
   - npcTracker
   - Door4
   - cellarlocked
+  - bgMusic
+  - music
   layers:
   - Default
   - TransparentFX

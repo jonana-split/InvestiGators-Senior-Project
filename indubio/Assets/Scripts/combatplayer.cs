@@ -63,10 +63,12 @@ public class combatplayer : MonoBehaviour
         Vector3 screenMax2 = cam.WorldToScreenPoint(max);
         playerSize = screenMax2- screenMin2;
         var hud = GameObject.FindWithTag("HUDDontDestroy").transform.Find("InventoryOpenBtn").gameObject;
+        var music = GameObject.FindWithTag("bgMusic");
         if (hud != null)
         {
             Debug.Log("feobfebiofewobef");
             hud.SetActive(false);
+            music.SetActive(false);
         }
     }
     void transparency(Color c)
@@ -194,4 +196,6 @@ public class combatplayer : MonoBehaviour
     {
         hurtboxHit(collision.collider);
     }
+
+
 }
