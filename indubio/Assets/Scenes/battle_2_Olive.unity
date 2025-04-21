@@ -376,6 +376,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1029728779 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4487100629699635419, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
+  m_PrefabInstance: {fileID: 1629825715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1029728782 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2216576425258339970, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
+  m_PrefabInstance: {fileID: 1629825715}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029728779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1146432313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -459,6 +475,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3594033051004358867, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
   m_PrefabInstance: {fileID: 1629825715}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1457141230 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6606004103466375074, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
+  m_PrefabInstance: {fileID: 1629825715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1457141231 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6916369432286683840, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
+  m_PrefabInstance: {fileID: 1629825715}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457141230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1544442295
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,7 +668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1491563538187776272, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 648.3
+      value: 275
       objectReference: {fileID: 0}
     - target: {fileID: 3027619850436949367, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
       propertyPath: m_Camera
@@ -645,6 +677,14 @@ PrefabInstance:
     - target: {fileID: 4795328235524503928, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
       propertyPath: m_Name
       value: CombatCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859582867791101664, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859582867791101664, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5836881764999941363, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
       propertyPath: m_Sprite
@@ -665,7 +705,7 @@ PrefabInstance:
     - target: {fileID: 7049779857377504741, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
       propertyPath: textbox
       value: 
-      objectReference: {fileID: 1629825722}
+      objectReference: {fileID: 1029728782}
     - target: {fileID: 7049779857377504741, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
       propertyPath: wintext
       value: 
@@ -754,7 +794,7 @@ PrefabInstance:
     - target: {fileID: 7049779857377504741, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
       propertyPath: 'hideOnGameOver.Array.data[0]'
       value: 
-      objectReference: {fileID: 1629825720}
+      objectReference: {fileID: 1457141230}
     - target: {fileID: 7049779857377504741, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
       propertyPath: 'hideOnGameOver.Array.data[1]'
       value: 
@@ -762,7 +802,7 @@ PrefabInstance:
     - target: {fileID: 7049779857377504741, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
       propertyPath: 'hideOnGameOver.Array.data[2]'
       value: 
-      objectReference: {fileID: 1629825718}
+      objectReference: {fileID: 1029728779}
     - target: {fileID: 7049779857377504741, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
       propertyPath: 'hideOnGameOver.Array.data[3]'
       value: 
@@ -854,32 +894,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1988615892411895180, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
   m_PrefabInstance: {fileID: 1629825715}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1629825718 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2490948729027486389, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
-  m_PrefabInstance: {fileID: 1629825715}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1629825719 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5298368503206676872, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
   m_PrefabInstance: {fileID: 1629825715}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1629825720 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5963646624073283948, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
-  m_PrefabInstance: {fileID: 1629825715}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1629825722 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6601552408627136667, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
-  m_PrefabInstance: {fileID: 1629825715}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629825718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1629825723 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3902497948630154297, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
@@ -1015,17 +1034,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2002438703 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9183959450885746669, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
-  m_PrefabInstance: {fileID: 1629825715}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629825720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2139967201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,7 +1237,7 @@ PrefabInstance:
     - target: {fileID: 3355556954208442549, guid: 04dc7db14280b9e4c93b2be9a7b0410f, type: 3}
       propertyPath: slider
       value: 
-      objectReference: {fileID: 2002438703}
+      objectReference: {fileID: 1457141231}
     - target: {fileID: 3355556954208442549, guid: 04dc7db14280b9e4c93b2be9a7b0410f, type: 3}
       propertyPath: manager
       value: 

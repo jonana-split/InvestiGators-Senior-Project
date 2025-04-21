@@ -1696,6 +1696,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5290466817658322262, guid: ac25315e2d563e24aa642308959b6d67, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2287,7 +2291,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextFileAsset: {fileID: 4900000, guid: 75e950d916252bb4996c4e5e086f5101, type: 3}
   TextFileAsset2: {fileID: 4900000, guid: 75e950d916252bb4996c4e5e086f5101, type: 3}
-  waitTime: 0.5
   singleUseDialogue: 0
   hasBeenUsed: 0
 --- !u!61 &672276055
