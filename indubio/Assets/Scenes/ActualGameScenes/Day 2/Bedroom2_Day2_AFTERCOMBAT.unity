@@ -172,6 +172,7 @@ MonoBehaviour:
   pageNumText: {fileID: 172772546}
   prevButton: {fileID: 172772545}
   nextButton: {fileID: 172772543}
+  enabled: 1
 --- !u!114 &42284885 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8901273302351872814, guid: b26bd4b166dc4924fb7fa01618c0411a, type: 3}
@@ -4439,7 +4440,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextFileAsset: {fileID: 4900000, guid: 7e4bafacd60e6574bb4719823fc1cb2f, type: 3}
   TextFileAsset2: {fileID: 4900000, guid: 7e4bafacd60e6574bb4719823fc1cb2f, type: 3}
-  waitTime: 0.5
   singleUseDialogue: 0
   hasBeenUsed: 0
 --- !u!1660057539 &9223372036854775807
