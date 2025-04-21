@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
 using Unity.Mathematics;
+using UnityEngine.UI;
 
 public class player : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class player : MonoBehaviour
     TextMeshProUGUI speakToAlison;
     TextMeshProUGUI lookForClues;
     TextMeshProUGUI doorLockedTxt;
+    Image doorLockedImage;
 
     private InvItem currentItem;
     private bool collectItem = false;
@@ -103,6 +105,7 @@ public class player : MonoBehaviour
         speakToOlive = inventoryUI.transform.Find("speakToOlive").gameObject.GetComponent<TextMeshProUGUI>();
         lookForClues = inventoryUI.transform.Find("lookForClues").gameObject.GetComponent<TextMeshProUGUI>();
         doorLockedTxt = inventoryUI.transform.Find("doorlocked").GetComponent<TextMeshProUGUI>();
+        doorLockedImage = inventoryUI.transform.Find("Image").GetComponent<Image>();
         invManager = inventoryUI.transform.Find("InventoryManager").gameObject.GetComponent<CollapseInventory>();
         journalManager = GameObject.Find("JournalManager").GetComponent<JournalManager>();
         var slot1 = hud.transform.Find("Inventory");
@@ -328,9 +331,11 @@ public class player : MonoBehaviour
         {
             Debug.Log("Door collided");
             doorLockedTxt.gameObject.SetActive(true);
+            doorLockedImage.gameObject.SetActive(true);
         }else if (collision.gameObject.tag == "cellarlocked" && !Inventory.keyCol)
         {
             doorLockedTxt.gameObject.SetActive(true);
+            doorLockedImage.gameObject.SetActive(true);
         }
         else if (collision.gameObject.tag == "ashlynSpeak")
         {
@@ -360,10 +365,12 @@ public class player : MonoBehaviour
         if (collision.gameObject.tag == "locked")
         {
             doorLockedTxt.gameObject.SetActive(false);
+            doorLockedImage.gameObject.SetActive(false);
         }
         else if (collision.gameObject.tag == "cellarlocked" && !Inventory.keyCol)
         {
             doorLockedTxt.gameObject.SetActive(false);
+            doorLockedImage.gameObject.SetActive(false);
         }
         else if (collision.gameObject.tag == "ashlynSpeak")
         {
