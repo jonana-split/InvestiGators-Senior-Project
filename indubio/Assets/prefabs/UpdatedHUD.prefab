@@ -727,6 +727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 2237528006063132797}
+  enabled: 1
 --- !u!114 &6516930118969572157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1795,8 +1796,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: This door is locked.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 62e5e86c530eb0e4ea5053accbd78410, type: 2}
+  m_sharedMaterial: {fileID: -2743455687547690443, guid: 62e5e86c530eb0e4ea5053accbd78410, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1861,7 +1862,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &7647647940757882646
@@ -2471,8 +2472,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 114.64526, y: 250.7243}
-  m_SizeDelta: {x: 59, y: 6}
+  m_AnchoredPosition: {x: 116, y: 250.7243}
+  m_SizeDelta: {x: 59, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1070785124815679613
 CanvasRenderer:
