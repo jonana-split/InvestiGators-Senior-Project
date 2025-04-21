@@ -9,7 +9,7 @@ public class combatplayer : MonoBehaviour
 {
     public bool freeze=false;
     private int hp = 100;
-    private int damage = 1;
+    private int damage = 10;
     private float shootCool = .25f;
     private float shootCount = 0;
     private float invinCool = 1f;
