@@ -80,7 +80,7 @@ public class player : MonoBehaviour
 
             Destroy(npcTracker);
             
-            currDoor = GameObject.FindWithTag("Door4");
+            currDoor = GameObject.Find("Door4");
 
             if (currDoor != null)
             {
@@ -340,18 +340,22 @@ public class player : MonoBehaviour
         else if (collision.gameObject.tag == "ashlynSpeak")
         {
             speakToAshlyn.gameObject.SetActive(true);
+            doorLockedImage.gameObject.SetActive(true);
         }
         else if (collision.gameObject.tag == "oliveSpeak")
         {
             speakToOlive.gameObject.SetActive(true);
+            doorLockedImage.gameObject.SetActive(true);
         }
         else if (collision.gameObject.tag == "alisonSpeak")
         {
             speakToAlison.gameObject.SetActive(true);
+            doorLockedImage.gameObject.SetActive(true);
         }
         else if (collision.gameObject.tag == "lookForClues")
         {
             lookForClues.gameObject.SetActive(true);
+            doorLockedImage.gameObject.SetActive(true);
         }
 
         if (Inventory.keyCol && collision.gameObject.tag == "cellarlocked")
@@ -375,18 +379,26 @@ public class player : MonoBehaviour
         else if (collision.gameObject.tag == "ashlynSpeak")
         {
             speakToAshlyn.gameObject.SetActive(false);
+            doorLockedImage.gameObject.SetActive(false);
+
         }
         else if (collision.gameObject.tag == "oliveSpeak")
         {
             speakToOlive.gameObject.SetActive(false);
+            doorLockedImage.gameObject.SetActive(false);
+
         }
         else if (collision.gameObject.tag == "alisonSpeak")
         {
             speakToAlison.gameObject.SetActive(false);
+            doorLockedImage.gameObject.SetActive(false);
+
         }
         else if (collision.gameObject.tag == "lookForClues")
         {
             lookForClues.gameObject.SetActive(false);
+            doorLockedImage.gameObject.SetActive(false);
+
         }
     }
 

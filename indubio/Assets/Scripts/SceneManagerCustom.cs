@@ -35,15 +35,17 @@ public class SceneManagerCustom : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         doors = GameObject.FindGameObjectsWithTag("Door");
-
+        Debug.Log(sceneName + " "+ scene.name+" "+ lastDoorNumber);
         if (scene.name == sceneName && lastDoorNumber != -1)
         {
+            Debug.Log("Here");
             // Find the door the player came from and spawn them next to it
             foreach (GameObject door in doors)
             {
                 Door doorScript = door.GetComponent<Door>();
                 if (doorScript != null && doorScript.doorNumber == lastDoorNumber)
                 {
+                    Debug.Log("Found");
                     player.transform.position = door.transform.position + Vector3.down; // Offset so they don't instantly re-trigger
                     break;
                 }
