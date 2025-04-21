@@ -28,6 +28,8 @@ TagManager:
   - cellarlocked
   - bgMusic
   - music
+  - invOpen
+  - invInfo
   layers:
   - Default
   - TransparentFX

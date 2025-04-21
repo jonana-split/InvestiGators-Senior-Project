@@ -105,7 +105,7 @@ public class player : MonoBehaviour
         if (hud != null)
         {
             hud.SetActive(true);
-            //Debug.Log("EOJefbouef");
+            Debug.Log("Inv button back");
         }
         else
         {
