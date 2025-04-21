@@ -35,7 +35,7 @@ public class wavybullet : MonoBehaviour
     }
     public void hitPlayer()
     {
-       Debug.Log("hithere");
+       //Debug.Log("hithere");
         
 
     }
