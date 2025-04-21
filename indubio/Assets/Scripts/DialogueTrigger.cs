@@ -13,7 +13,7 @@ public class DialogueTrigger : MonoBehaviour
     public TextAsset TextFileAsset; // your imported text file for your NPC
     public TextAsset TextFileAsset2;
     private Queue<string> dialogue = new Queue<string>(); // stores the dialogue (Great Performance!)
-    public float waitTime = 0.5f; // lag time for advancing dialogue so you can actually read it
+    private float waitTime = 0.1f; // lag time for advancing dialogue so you can actually read it
     private float nextTime = 0f; // used with waitTime to create a timer system
     public bool singleUseDialogue = false;
     [HideInInspector]

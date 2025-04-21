@@ -72,6 +72,7 @@ public class DialogueManager : MonoBehaviour
     public SpeakerLibrary speakerLibrary;
     [HideInInspector]
     public List<string> speakerSpriteNames;
+    player ourplayer;
 
 
 
@@ -80,6 +81,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Start()
     {
+        ourplayer = GameObject.FindGameObjectWithTag("Player").GetComponent<player>();
 
         foreach (SpeakerLibrary.SpriteInfo info in speakerLibrary.speakerLibrary)
         {
@@ -87,19 +89,19 @@ public class DialogueManager : MonoBehaviour
         }
         speaker.sprite = invisSprite;
     }
-    /*
+    
     private void FreezePlayer()
     {
-        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
-        playerMovement.disabled = true;
+        ourplayer.freeze();
     }
 
     private void UnFreezePlayer()
     {
-        playerMovement.disabled = false;
+        ourplayer.unfreeze();
     }
-    */
-    public void StartDialogue(Queue<string> dialogue)
+
+
+        public void StartDialogue(Queue<string> dialogue)
     {
         isInDialouge = true;
         speaker.sprite = invisSprite; //Clear the speaker
@@ -107,7 +109,7 @@ public class DialogueManager : MonoBehaviour
         continueImage.SetActive(false);
         if (freezePlayerOnDialogue)
         {
-            //FreezePlayer();
+            FreezePlayer();
         }
 
 
@@ -230,7 +232,7 @@ public class DialogueManager : MonoBehaviour
         // isOpen = false;
         if (freezePlayerOnDialogue)
         {
-            //UnFreezePlayer();
+            UnFreezePlayer();
         }
         if (levelBool)
         {

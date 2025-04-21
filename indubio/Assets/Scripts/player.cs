@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
 using TMPro;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
+//using UnityEditor.SearchService;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
 
@@ -39,7 +39,7 @@ public class player : MonoBehaviour
     public bool isDay1 = false;
 
     public GameObject currDoor;
-
+    bool frozen = false;
     public GameObject npcTracker;
 
     void Start()
@@ -141,7 +141,16 @@ public class player : MonoBehaviour
             }
         }
     }
-
+    public void freeze()
+    {
+        frozen = true;
+        rb.linearVelocity=Vector2.zero;
+        animator.SetBool("walking", false);
+    }
+    public void unfreeze()
+    {
+        frozen = false;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -168,42 +177,43 @@ public class player : MonoBehaviour
 
         if (Inventory.keyCol)
         {
-
+            //why does this do nothing?
         }
-
+        if (!frozen)
+        {
             moveDelta = move.ReadValue<Vector2>();
-        //Debug.Log(moveDelta);
+            //Debug.Log(moveDelta);
 
-        horizontal = moveDelta.x;
-        vertical = moveDelta.y;
+            horizontal = moveDelta.x;
+            vertical = moveDelta.y;
 
-        if (horizontal != 0 || vertical != 0)
-        {
-            isWalking = true;
+            if (horizontal != 0 || vertical != 0)
+            {
+                isWalking = true;
+            }
+            else
+            {
+                isWalking = false;
+            }
+
+            moveDelta *= speed;
+            //Debug.Log(moveDelta);
+            rb.linearVelocity = moveDelta;
+            //Debug.Log(rb.linearVelocity);
+
+            if (isWalking)
+            {
+                animator.SetFloat("x", horizontal);
+                animator.SetFloat("y", vertical);
+
+            }
+            animator.SetBool("walking", isWalking);
         }
-        else
-        {
-            isWalking = false;
-        }
-
-        moveDelta *= speed;
-        //Debug.Log(moveDelta);
-        rb.linearVelocity = moveDelta;
-        //Debug.Log(rb.linearVelocity);
-
-        if (isWalking)
-        {
-            animator.SetFloat("x", horizontal);
-            animator.SetFloat("y", vertical);
-
-        }
-
-        animator.SetBool("walking", isWalking);
-
         if (Input.GetKeyDown(KeyCode.E) && collectItem == true)
         {
             inventory.AddItem(currentItem);
         }
+        
 
     }
 
