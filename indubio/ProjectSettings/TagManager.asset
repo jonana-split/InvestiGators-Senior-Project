@@ -31,6 +31,7 @@ TagManager:
   - invOpen
   - invInfo
   - journal
+  - ashlyn
   layers:
   - Default
   - TransparentFX
