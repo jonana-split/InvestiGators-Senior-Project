@@ -1938,7 +1938,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &7647647940757882646
@@ -2548,8 +2548,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 114.64526, y: 250.7243}
-  m_SizeDelta: {x: 59, y: 6}
+  m_AnchoredPosition: {x: 116, y: 250.7243}
+  m_SizeDelta: {x: 59, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1070785124815679613
 CanvasRenderer:

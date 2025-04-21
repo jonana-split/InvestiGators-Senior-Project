@@ -1676,7 +1676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetScene: WineCellar
   doorNumber: 6
-  fadeOverlay: {fileID: 0}
+  fadeOverlay: {fileID: 1727773178}
   fadeDuration: 1
 --- !u!61 &476785684
 BoxCollider2D:

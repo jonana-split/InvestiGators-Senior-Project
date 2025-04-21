@@ -80,7 +80,7 @@ public class player : MonoBehaviour
 
             Destroy(npcTracker);
             
-            currDoor = GameObject.FindWithTag("Door4");
+            currDoor = GameObject.Find("Door4");
 
             if (currDoor != null)
             {
