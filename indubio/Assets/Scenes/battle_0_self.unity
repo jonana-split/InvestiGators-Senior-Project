@@ -377,7 +377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7049779857377504741, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
       propertyPath: 'waveDialog.Array.data[4]'
-      value: "*inhales*, *exhales*. (Everything\u2019s gonna be okay.) "
+      value: I can do this...
       objectReference: {fileID: 0}
     - target: {fileID: 7049779857377504741, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
       propertyPath: 'waveImages.Array.data[0]'
