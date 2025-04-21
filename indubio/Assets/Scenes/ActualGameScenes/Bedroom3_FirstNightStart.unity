@@ -1282,7 +1282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextFileAsset: {fileID: 4900000, guid: f3a930364f68d4e46864d01bf753ee0b, type: 3}
   TextFileAsset2: {fileID: 4900000, guid: f3a930364f68d4e46864d01bf753ee0b, type: 3}
-  singleUseDialogue: 0
+  singleUseDialogue: 1
   hasBeenUsed: 0
 --- !u!61 &657247753
 BoxCollider2D:
