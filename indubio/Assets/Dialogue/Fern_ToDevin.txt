@@ -1,0 +1,3 @@
+[NAME=Fern][SPEAKERSPRITE=Fern]I'm so sorry, Devin...
+[NAME=Fern][SPEAKERSPRITE=Fern]I'll solve this case for you. For all of us.
+

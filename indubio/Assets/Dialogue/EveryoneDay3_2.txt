@@ -1,11 +1,15 @@
 [LEVEL=1]
 [NAME=Ashlyn][SPEAKERSPRITE=Ashlyn]…Wow. This is a lot to take in.
-[NAME=Allison][SPEAKERSPRITE=Allison]I understand. I know you can never forgive me, but please believe me when I say I never wanted to do this. All I wanted was to protect you and it went way too far. I’m so, so sorry…
+[NAME=Allison][SPEAKERSPRITE=Allison]I understand. I know you can never forgive me, but please believe me when I say I never wanted to do this.
+[NAME=Allison][SPEAKERSPRITE=Allison]All I wanted was to protect you and it went way too far. I’m so, so sorry…
 [NAME=Ashlyn][SPEAKERSPRITE=Ashlyn]I'm going to need some time to process this...
 [NAME=Ashlyn][SPEAKERSPRITE=Ashlyn]Thank you for trying to protect me… I knew he treated me poorly and I’d always make excuses for him... but this all feels so unreal.
+[NAME=Olive][SPEAKERSPRITE=Olive]I’m glad you’re out of such a bad situation now, but I’m sorry it had to happen like this, Ashlyn…
 [NAME=Fern][SPEAKERSPRITE=Fern]Thank you Allison for being honest. I know that’s an extremely hard thing to do, and I’m sorry that happened.
 [NAME=Fern][SPEAKERSPRITE=Fern]Well, just in time, it seems the storm is clearing up. We can finally go home.
 [NAME=Allison][SPEAKERSPRITE=Allison]I-Is something going to happen to me?
 [NAME=Fern][SPEAKERSPRITE=Fern]I’ll need to tell my boss about the situation, especially since this was my first case on my own.
 [NAME=Fern][SPEAKERSPRITE=Fern]I understand it was an accident, but he'll have to look over my investigation.
 [NAME=Allison][SPEAKERSPRITE=Allison]T-thank you…
+[NAME=Fern][SPEAKERSPRITE=Fern](<i>I can’t believe my first solo case ended up this way…</i>)
+[NAME=Fern][SPEAKERSPRITE=Fern](<i>We’re all going to need a lot of time to heal from this. At least I solved the mystery, but I hope my friends will be okay…</i>)
