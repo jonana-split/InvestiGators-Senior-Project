@@ -14,6 +14,7 @@ public class Door : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
+            col.gameObject.GetComponent<player>().freeze();
             Debug.Log($"Entered door {doorNumber}, loading scene {targetScene}");
             //SceneManagerCustom.instance.LoadScene(targetScene, doorNumber);
             StartCoroutine(FadeOutAndLoadScene());
