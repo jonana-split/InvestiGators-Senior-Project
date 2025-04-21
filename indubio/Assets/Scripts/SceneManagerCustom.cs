@@ -19,6 +19,8 @@ public class SceneManagerCustom : MonoBehaviour
         }
         else
         {
+            instance.sceneName = sceneName;
+            Debug.Log("Guh");
             Destroy(gameObject);
             return;
         }
