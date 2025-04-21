@@ -168,7 +168,7 @@ public class player : MonoBehaviour
         if (invManager != null)
         {
             invManager.CloseInventory();
-            invManager.enabled=false;
+            //invManager.enabled=false;
         }
     
         if (journalManager != null)
