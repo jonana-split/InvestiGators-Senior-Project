@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 using TMPro;
+using System.Linq;
 
 
 /********************
@@ -126,6 +127,11 @@ public class DialogueManager : MonoBehaviour
 
     private void PrintDialogue()
     {
+        if (inputStream.Count<string>() == 0)
+        {
+            return;
+        }
+            
         if (inputStream.Peek().Contains("EndQueue")) // special phrase to stop dialogue
         {
             // Clear Queue
