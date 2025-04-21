@@ -65,7 +65,7 @@ public class JournalManager : MonoBehaviour
 
     public void ReadTextFromFile()
     {
-        filePath = "Assets/TextFiles/page" + pageNum + ".txt";
+        filePath = Path.Combine(Application.streamingAssetsPath,"TextFiles/page" + pageNum + ".txt");
         if (File.Exists(filePath))
         {
             string fileContent = File.ReadAllText(filePath);

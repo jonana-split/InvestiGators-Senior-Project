@@ -9,7 +9,10 @@ public class Door : MonoBehaviour
     public int doorNumber; // Identifier for this door
     [SerializeField] private Image fadeOverlay; // Reference to the UI Image for fading
     [SerializeField] private float fadeDuration = 1.0f;
-
+    private void Start()
+    {
+        //fadeOverlay.gameObject.SetActive(false);
+    }
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
@@ -23,10 +26,11 @@ public class Door : MonoBehaviour
 
     private IEnumerator FadeOutAndLoadScene()
     {
+        fadeOverlay.gameObject.SetActive(true);
+
         Color color = fadeOverlay.color;
         float time = 0f;
 
-        fadeOverlay.gameObject.SetActive(true);
 
         while (time < fadeDuration)
         {
