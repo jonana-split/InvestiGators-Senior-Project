@@ -10,6 +10,7 @@ using Unity.VisualScripting;
 using Unity.Mathematics;
 using UnityEngine.UI;
 
+//CITATIONS: Some reference to https://www.youtube.com/watch?v=-xB4xEmGtCY
 public class player : MonoBehaviour
 {
     private BoxCollider2D box;
