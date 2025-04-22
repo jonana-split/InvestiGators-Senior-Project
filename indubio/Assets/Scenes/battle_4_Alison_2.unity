@@ -566,7 +566,7 @@ PrefabInstance:
     - target: {fileID: 7049779857377504741, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
       propertyPath: 'waveDialog.Array.data[2]'
       value: "I couldn\u2019t stop thinking about the words he said to her, so I
-        made a stupid decision. I decided to confront him that night. He went into
+        made a stupid decision. I decided to confront him that night. I went into
         his room with overwhelming anger and just went off on him. All I wanted to
         do was protect my sister. "
       objectReference: {fileID: 0}
