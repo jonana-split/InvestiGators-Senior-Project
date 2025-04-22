@@ -11,6 +11,7 @@ public class combatmanager : MonoBehaviour
     public Vector2[] WavePositions;
     public int[] enemiesInWave;
     public int[] numbersInWaves;
+    public int healWave = -1000;
     public TextMeshProUGUI textbox;
     //public GameObject textboxObj;
     public string[] waveDialog;
@@ -27,6 +28,7 @@ public class combatmanager : MonoBehaviour
     public GameObject wintext;
     public Sprite[] waveImages;
     SpriteRenderer sp;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void updateWaveTextImage()
     {
@@ -143,6 +145,11 @@ public class combatmanager : MonoBehaviour
             }
             //clickPrompt.SetActive(true);
             player.resetForWave();
+            if(wave==healWave)
+            {
+                Debug.Log("healsies");
+                player.heal();
+            }
             WaveSpawned = true;
 
         }

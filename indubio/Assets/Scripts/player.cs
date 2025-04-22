@@ -159,6 +159,7 @@ public class player : MonoBehaviour
             }
         }
     }
+
     public void freeze()
     {
         

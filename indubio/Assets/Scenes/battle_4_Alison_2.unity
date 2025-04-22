@@ -654,6 +654,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 883910369}
     - target: {fileID: 7049779857377504741, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
+      propertyPath: healWave
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049779857377504741, guid: f9a33d3da86b6d043858dd936366ec40, type: 3}
       propertyPath: nextScene
       value: MainRoom_Day3_AFTERFINALCOMBAT2
       objectReference: {fileID: 0}

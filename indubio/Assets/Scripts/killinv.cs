@@ -15,6 +15,15 @@ public class killinv : MonoBehaviour
         {
             Destroy(npc);
         }
+        var BGmusic = GameObject.FindWithTag("bgMusic");
+        if (BGmusic != null)
+        {
+            Destroy(music);
+        }
+        if (npc != null)
+        {
+            Destroy(npc);
+        }
         var hud = GameObject.FindWithTag("HUDDontDestroy");
         if (hud != null)
         {
