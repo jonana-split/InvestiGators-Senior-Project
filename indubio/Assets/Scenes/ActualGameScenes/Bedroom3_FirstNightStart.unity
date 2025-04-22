@@ -1578,7 +1578,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I should speak with Alison first.
+  m_text: I should speak with Allison first.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 62e5e86c530eb0e4ea5053accbd78410, type: 2}
   m_sharedMaterial: {fileID: -2743455687547690443, guid: 62e5e86c530eb0e4ea5053accbd78410, type: 2}
