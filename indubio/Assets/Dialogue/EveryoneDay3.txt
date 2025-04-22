@@ -8,7 +8,7 @@
 [NAME=Olive][SPEAKERSPRITE=Olive]This house has a wine cellar?
 [NAME=Fern][SPEAKERSPRITE=Fern]Yes, but it’s hidden. You access it through a small door in a kitchen cabinet, and it was locked when we arrived. So it needed a key to open it.
 [NAME=Ashlyn][SPEAKERSPRITE=Ashlyn]Where’d you find the key?
-[NAME=Fern][SPEAKERSPRITE=Fern]It was in a small hidden compartment inside one of the kitchen cabinets. I don’t know how any of you would even know that was there.
+[NAME=Fern][SPEAKERSPRITE=Fern]It was in a hidden compartment inside one of the kitchen cabinets. I don’t know how any of you would even know that was there.
 [NAME=Ashlyn][SPEAKERSPRITE=Ashlyn]Oh no... I-It couldn’t be…
 [NAME=Ashlyn][SPEAKERSPRITE=Ashlyn]I know who would know about that spot…
 [NAME=Fern][SPEAKERSPRITE=Fern]Who?
