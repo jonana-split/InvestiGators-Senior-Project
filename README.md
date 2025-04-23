@@ -1,3 +1,10 @@
 # InvestiGators-Senior-Project
-Senior project!
-Test
+Welcome to...
+##Indubio
+A game developed by
+- Arwen Dowers
+- Aaron Gill
+- Joanna Mijares
+- Laura Schnettgoecke
+
+
