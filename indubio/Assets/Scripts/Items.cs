@@ -3,6 +3,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
+//CITATIONS: Some reference to https://www.youtube.com/watch?v=-xB4xEmGtCY
+
 public interface InvItem
 {
     string Name { get; }

@@ -2,6 +2,9 @@ using UnityEngine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+
+//CITATIONS: Some reference to https://www.youtube.com/watch?v=-xB4xEmGtCY
+
 public class CollapseInventory : MonoBehaviour
 {
     public GameObject inventory;
@@ -18,12 +21,12 @@ public class CollapseInventory : MonoBehaviour
 
     public void OpenInventory()
     {
-        if(!enabled)
+        if (!enabled)
         {
             return;
         }
         CanvasGroup inv = inventory.GetComponent<CanvasGroup>();
-
+        Debug.Log("Attempting to open inventory");
         inv.alpha = 1f;
         inv.interactable = true;
         inv.blocksRaycasts = true;

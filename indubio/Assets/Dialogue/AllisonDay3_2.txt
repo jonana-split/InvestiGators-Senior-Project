@@ -4,7 +4,7 @@
 [NAME=Fern][SPEAKERSPRITE=Fern]Hm, okay. Well, I know this wasn’t a suicide or accident because there was no murder weapon in the room. 
 [NAME=Fern][SPEAKERSPRITE=Fern]I found a knife in the wine cellar... which is very odd since the cellar was locked and the key seemed to be hidden...
 [NAME=Allison][SPEAKERSPRITE=Allison]Where’d you find it?
-[NAME=Fern][SPEAKERSPRITE=Fern]In a hidden corner of one of the kitchen cabinets. I found it while looking around the house.
+[NAME=Fern][SPEAKERSPRITE=Fern]In a compartment in one of the kitchen cabinets. I found it while looking around the house.
 [NAME=Allison][SPEAKERSPRITE=Allison]Oh wow, that’s interesting.
 [NAME=Fern][SPEAKERSPRITE=Fern]I have one last question for you: I heard from Ashlyn and Olive that Devin was not treating your sister very well, which I had no idea about. Were you aware of this?
 [NAME=Allison][SPEAKERSPRITE=Allison]...

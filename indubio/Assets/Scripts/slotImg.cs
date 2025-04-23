@@ -6,6 +6,8 @@ using TMPro;
 using UnityEngine.UI;
 using Unity.VisualScripting;
 using UnityEngine.Timeline;
+
+//CITATIONS: Some reference to https://www.youtube.com/watch?v=-xB4xEmGtCY
 public class slotImg: MonoBehaviour 
 {
     private InvItem current;

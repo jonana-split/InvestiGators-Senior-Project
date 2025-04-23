@@ -108,6 +108,11 @@ public class combatplayer : MonoBehaviour
     {
         freeze = false;
     }
+    public void heal()
+    {
+        hp = 100;
+        slider.value = hp;
+    }
     public void resetForWave()
     {
         if (animator != null)

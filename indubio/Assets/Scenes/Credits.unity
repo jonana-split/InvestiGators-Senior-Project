@@ -34881,7 +34881,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 58}
+  m_AnchoredPosition: {x: 0, y: 138.5}
   m_SizeDelta: {x: 300, y: 55.849976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &814584244
@@ -35017,7 +35017,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16, y: -15}
+  m_AnchoredPosition: {x: 16, y: 26}
   m_SizeDelta: {x: 359.4541, y: 372.231}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &995584781
@@ -35040,8 +35040,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Developers:\n\tLaura Schnettgoecke\n\tArwen Dowers\n\tJoanna Mijares\n\tAaron
-    Gill\nInstitution:\n\tUniversity of Florida"
+  m_text: "<i>Developers:</i>\n\tArwen Dowers\n\tAaron Gill\n\tJoanna Mijares\n\tLaura
+    Schnettgoecke\n<i>Institution:</i>\n\tUniversity of Florida\n<i>References:</i>
+    \n\tJayanam (YouTube), Eric Bejleri,\n\tBenjamin Cohen, and Michael \n\tO'Connell "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7e30198af612c7e45b6e27fc88fa8ea9, type: 2}
   m_sharedMaterial: {fileID: -664134713226018549, guid: 7e30198af612c7e45b6e27fc88fa8ea9, type: 2}

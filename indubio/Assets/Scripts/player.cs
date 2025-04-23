@@ -10,6 +10,7 @@ using Unity.VisualScripting;
 using Unity.Mathematics;
 using UnityEngine.UI;
 
+//CITATIONS: Some reference to https://www.youtube.com/watch?v=-xB4xEmGtCY
 public class player : MonoBehaviour
 {
     private BoxCollider2D box;
@@ -158,6 +159,7 @@ public class player : MonoBehaviour
             }
         }
     }
+
     public void freeze()
     {
         
@@ -168,7 +170,7 @@ public class player : MonoBehaviour
         if (invManager != null)
         {
             invManager.CloseInventory();
-            invManager.enabled=false;
+            //invManager.enabled=false;
         }
     
         if (journalManager != null)
